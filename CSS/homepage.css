@@ -21,29 +21,52 @@
 }
 
 .welcome {
-    text-align: center;
-    padding: 2rem 0;
+    text-align: right;
     width: 100%;
-    height: 50vh;
+    height: 20vh;
     overflow: hidden;
 }
 
 .welcome-text {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     font-family: var(--font-family);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: absolute;
     z-index: 3;
-    top: 5%;
-    right: 0;
+    right: 2%;
 }
 
+.welcome-text h3 {
+    font-size: 1.2rem;
+    color: var(--green-color);
+    margin-bottom: 0.5rem;
+}
 
 .welcome img {
     width: 100%;
     height: 20vh;
     object-fit: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--orange-color);
+    
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--green-color);
 }
