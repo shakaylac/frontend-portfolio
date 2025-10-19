@@ -20,6 +20,9 @@
     position: relative;
 }
 
+/* HEADER */
+
+/* Welcome */
 .welcome {
     text-align: right;
     width: 100%;
@@ -51,6 +54,7 @@
     object-fit: cover;
 }
 
+/* Nav */
 nav {
     align-items: center;
     justify-content: center;
@@ -76,3 +80,9 @@ a {
     text-decoration: none;
     color: var(--green-color);
 }
+
+/* ///////////////////////// */
+
+/* MAIN */
+
+/*
