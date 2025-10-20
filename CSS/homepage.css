@@ -35,7 +35,6 @@
     flex-direction: column;
     align-items: right;
     justify-content: center;
-    font-family: var(--font-family);
     font-size: 1.5rem;
     position: absolute;
     z-index: 3;
@@ -45,7 +44,9 @@
 .welcome-text h3 {
     font-size: 1.2rem;
     color: var(--green-color);
+    font-family: var(--font-family);
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .welcome img {
@@ -85,4 +86,25 @@ a {
 
 /* MAIN */
 
-/*
+/* About Me Section */
+
+.about-me-section {
+    width: 100%;
+    text-align: center;
+    background-color: var(--green-color);
+    padding: 10%;
+    color: var(--neutral-color);
+}
+
+.about-me-section h2 {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.about-me-section p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
