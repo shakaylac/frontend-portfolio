@@ -123,8 +123,10 @@ a:hover {
     width: 100%;
     height: 90vh;
     margin-bottom: 100px;
-    background-image: linear-gradient( #df8b16c2, #e2ba69a9 );
-    /* allow absolutely-positioned preview inside */
+    /* gradient colors are exposed as CSS variables so they can be changed dynamically via JS */
+    --gallery-grad-start: #df8b16c2; /* original orange (start) */
+    --gallery-grad-end:   #e2ba69a9; /* original orange (end) */
+    background-image: linear-gradient(var(--gallery-grad-start), var(--gallery-grad-end));
     position: relative;
     overflow: hidden;
 }
@@ -139,20 +141,12 @@ a:hover {
     padding-top: 40px;
 }
 
-/* Remove the orange gradient when hovering inside the gallery (e.g., over project images) */
+/* Remove the orange gradient when hovering inside the gallery (e.g., over project images) 
 .project-gallery:hover {
     background-image: none;
     background-color: transparent;
     transition: background 200ms ease;
-}
-
-/*li img {
-    width: 50%;
-    height: 35vh;
-    background-color: var(--orange-color);
-    border-radius: 20px;
-    transition: transform 0.5s ease;
-}*/
+} */
 
 li {
     color: #fff;
@@ -172,7 +166,9 @@ li img:hover {
 
 .cultivate {
     background-image: linear-gradient(#fff, #59802B);
+
     padding: 20%;
+    margin-right: 10%;
     border-radius: 20px;
 }
 
