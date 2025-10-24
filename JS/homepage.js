@@ -71,7 +71,7 @@ var hoverEnd = 'rgba(10,10,10,0.06)';
 if (cultivateEl) {
   cultivateEl.addEventListener('mouseenter', () => {
     showPreview('./IMAGES/cultivate-hover-image.png');
-    var hoverEnd = '#58802b54';
+    var hoverEnd = '#58802b96';
     setGalleryGradient(hoverStart, hoverEnd);
   });
   cultivateEl.addEventListener('mouseleave', () => {
