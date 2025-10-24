@@ -209,6 +209,15 @@ li img:hover {
     box-shadow: 0px 0px 10px 5px #0000004f;
 }
 
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+}
+
 .media {
     display: flex;
     justify-content: space-evenly;
