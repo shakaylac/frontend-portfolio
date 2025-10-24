@@ -100,7 +100,6 @@ a:hover {
     width: 100%;
     text-align: center;
     background-color: var(--green-color);
-
     padding: 10%;
     color: var(--neutral-color);
 }
@@ -191,14 +190,29 @@ li img:hover {
 /* Call To Action */
 .call-to-action {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.connect {
+    display: flex;
     justify-content: space-around;
-    background-color: var(--yellow-color);
-    width: 80%;
+    background-color: #df8b16c9;
+    width: 60%;
     height: 400px;
     padding: 50px;
     margin: 50px;
+    margin-top: -20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px #0000004f;
+}
+
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
 }
 
 
@@ -223,4 +237,19 @@ footer {
     text-align: center;
     color: #1b1b1b;
     padding: 20px;
+}
+
+@media (min-width: 400px) {
+
+}
+
+@media (min-width: 700px) {
+
+}
+
+@media (min-width: 1200px) {
+    .about-me-section {
+        height: 200px;
+        padding: 0px;
+    }
 }
