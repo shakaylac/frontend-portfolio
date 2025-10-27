@@ -82,7 +82,7 @@ a {
     text-decoration: none;
     color: var(--green-color);
     font-size: 1.2rem;
-     transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -123,42 +123,27 @@ a:hover {
     width: 100%;
 }
 
-.resume-btn {
-    font-family: var(--font-family);
-    background-color: var(--red-color);
-    padding: .5em;
-    font-size: 1.2rem;
-    margin: 10px;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
-
-.resume-btn:hover {
-    background-color: #fff;
-    color: var(--orange-color);
-}
-
-.contact-btn {
-    font-family: var(--font-family);
-    background-color: var(--red-color);
-    padding: .5em;
-    font-size: 1.2rem;
-    margin: 10px;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
-
-.contact-btn:hover {
-     background-color: #fff;
-    color: var(--orange-color);
-}
-
 .resume-btn,
 .contact-btn {
+    font-family: var(--font-family);
+    background-color: var(--red-color);
+    padding: .5em;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #fff;
     margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: color 0.3s ease-in-out;
 }
+
+.resume-btn:hover,
+.contact-btn:hover {
+    background-color: #fff;
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+}
+
 
 
 .skills {
