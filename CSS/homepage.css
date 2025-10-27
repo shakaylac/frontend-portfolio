@@ -102,9 +102,7 @@ a:hover {
     height: 100vh;
     text-align: center;
     background-color: var(--green-color);
-    padding: 10%;
-    padding-bottom: 200px;
-    margin-bottom: 200px;
+    padding: 20%;
     color: var(--neutral-color);
 }
 
@@ -116,6 +114,7 @@ a:hover {
 
 .about-me-section p {
     font-family: var(--font-family);
+    line-height: 2;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -134,13 +133,13 @@ a:hover {
 
 .skill-contianer {
     display: flex;
-    width: 60%;
+    width: 100%;
     flex-wrap: wrap;
     height: auto;
 }
 
 .icons {
-    width: 15%;
+    width: 12%;
     margin: 30px;
 }
 
@@ -323,7 +322,7 @@ footer {
 
 @media (min-width: 1200px) {
     .about-me-section {
-        height: 50vh;
-        padding: 0px;
+        height: 60vh;
+        padding: 20px;
     }
 }
