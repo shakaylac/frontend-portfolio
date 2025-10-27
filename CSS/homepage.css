@@ -123,6 +123,43 @@ a:hover {
     width: 100%;
 }
 
+.resume-btn {
+    font-family: var(--font-family);
+    background-color: var(--red-color);
+    padding: .5em;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.resume-btn:hover {
+    background-color: #fff;
+    color: var(--orange-color);
+}
+
+.contact-btn {
+    font-family: var(--font-family);
+    background-color: var(--red-color);
+    padding: .5em;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-btn:hover {
+     background-color: #fff;
+    color: var(--orange-color);
+}
+
+.resume-btn,
+.contact-btn {
+    margin-top: 30px;
+}
+
 
 .skills {
     display: flex;
@@ -268,19 +305,6 @@ li img:hover {
     border: none;
 }
 
-.resume {
-    font-family: var(--font-family);
-    padding: 5%;
-    background-color: var(--red-color);
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
-
-.resume:hover {
-    background-color: var(#fff);
-    color: var(--orange-color);
-}
 
 .media {
     display: flex;
