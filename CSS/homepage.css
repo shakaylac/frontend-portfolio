@@ -18,8 +18,8 @@ body {
     font-family: var(--font-family);
     background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
-    position: relative;
+    line-height: 1.6; 
+ /*   position: relative; */
 }
 
 /* HEADER */
@@ -97,10 +97,14 @@ a:hover {
 /* About Me Section */
 
 .about-me-section {
+    display: flex;
     width: 100%;
+    height: 100vh;
     text-align: center;
     background-color: var(--green-color);
     padding: 10%;
+    padding-bottom: 200px;
+    margin-bottom: 200px;
     color: var(--neutral-color);
 }
 
@@ -109,10 +113,35 @@ a:hover {
     padding: 10px;
 }
 
+
 .about-me-section p {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 600;
+}
+
+.about-text {
+    width: 100%;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-contianer {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.icons {
+    width: 15%;
+    margin: 30px;
 }
 
 /* Projects */
@@ -120,7 +149,7 @@ a:hover {
 .project-gallery {
     text-align: center;
     width: 100%;
-    height: 90vh;
+    height: auto;
     margin-bottom: 100px;
     /* gradient colors are exposed as CSS variables so they can be changed dynamically via JS */
     --gallery-grad-start: #df8b16c2; /* original orange (start) */
@@ -222,14 +251,15 @@ li img:hover {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    width: 250px;
-    height: 85%;
-    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+    padding: 50px;
+    margin: 20px;
 }
 
 .message {
-    width: 90%;
-    height: 60%;
+    width: 20em;
+    height: 90rem;
     margin: 10%;
 }
 
@@ -293,7 +323,7 @@ footer {
 
 @media (min-width: 1200px) {
     .about-me-section {
-        height: 200px;
+        height: 50vh;
         padding: 0px;
     }
 }
