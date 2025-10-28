@@ -6,6 +6,12 @@ const cultivateEl = document.getElementById('cultivate');
 const rootedEl = document.getElementById('rooted-portrait');
 const taskflowEl = document.getElementById('taskflow');
 const container = document.getElementById('project-gallery');
+const projectTitle = document.getElementById('project-title');
+const nav = document.getElementById('nav');
+
+//if (nav.style.marginTop = '0px') {
+//  nav.style.position = "fixed";
+//}
 
 
 const gradient = document.createElement('div');
@@ -44,10 +50,12 @@ function showPreview(src) {
   if (!src || !container) return;
   preview.src = src;
   preview.style.opacity = '1';
+  projectTitle.style.opacity = '0';
 }
 
 function hidePreview() {
   preview.style.opacity = '0';
+  projectTitle.style.opacity = '1';
 }
 
 // Dynamic gradient control: set and restore
