@@ -220,6 +220,12 @@ li img:hover {
     background-color: #fff;
 }
 
+.cultivate,
+.rooted-portrait,
+.taskflow {
+    padding: 10px;
+}
+
 .thumb-img {
     display: flex;
     flex-direction: column;
@@ -235,8 +241,11 @@ li img:hover {
 }
 
 
-.project-gallery { position: relative; }      /* parent */
-li img {                      /* child */
+.project-gallery { 
+    position: relative; 
+}                              
+
+li img {                     
   position: absolute;
   width: 100px;
   height: 100px;
