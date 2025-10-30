@@ -30,7 +30,7 @@ body {
 
 /* Welcome */
 .welcome {
-    text-align: right;
+    text-align: left;
     width: 100%;
     height: 20vh;
     overflow: hidden;
@@ -39,12 +39,12 @@ body {
 .welcome-text {
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: left;
     justify-content: center;
     font-size: 1.5rem;
     position: absolute;
     z-index: 3;
-    right: 2%;
+    left: 2%;
 }
 
 .welcome-text h3 {
@@ -59,6 +59,7 @@ body {
     width: 100%;
     height: 20vh;
     object-fit: cover;
+    transform: scaleX(-1);
 }
 
 /* Nav */
@@ -185,9 +186,8 @@ a:hover {
     overflow: hidden;
 }
 
-.project-gallery h2 {
+.project-gallery h1 {
     color: var(--green-color);
-    font-size: 2.5rem;
     padding: 40px;
 }
 
@@ -263,15 +263,24 @@ li img { z-index: 5; }
 /* UI DESIGNS */
 
 .ui-designs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-image: linear-gradient(to bottom, #2a4034, #0c130f);
+}
+
+.ui-designs h1 {
+    font-family: var(--font-family);
+    padding: 40px;
+    color: var(--neutral-color);
 }
 
 .ui-gallery {
     max-width: 1000px;
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
 
 .fade-slides {
@@ -280,39 +289,39 @@ li img { z-index: 5; }
 
 .prev, .next {
     cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -346,7 +355,12 @@ li img { z-index: 5; }
     background-image: linear-gradient(to bottom, #df8a16, #855410);
     padding: 10px;
     border-radius: 10px;
+    margin: 20px;
     box-shadow: var(--shadow);
+}
+
+.see-ui-projects:hover {
+    color: #fff;
 }
 
 
@@ -357,12 +371,13 @@ li img { z-index: 5; }
     align-items: center;
     width: 100%;
     height: auto;
+    margin-top: 100px;
 }
 
 .connect {
     display: flex;
     justify-content: center;
-    background-color: #df8b16c9;
+    background-color: var(--neutral-color);
     width: 60%;
     height: 600px;
     padding: 30px;
