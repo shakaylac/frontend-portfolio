@@ -267,11 +267,12 @@ li img { z-index: 5; }
 
 .connect {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #df8b16c9;
     width: 60%;
     height: 600px;
     padding: 30px;
+    padding-left: 100px;
     margin: 50px;
     margin-top: -20px;
     border-radius: 10px;
@@ -329,26 +330,36 @@ li img { z-index: 5; }
 }
 
 
+
+.profile-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: auto;
+}
+
+
+.image-container {
+    border-radius: 30px;
+    /* full width so image and media stack cleanly */
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
 .media {
     display: flex;
     justify-content: space-evenly;
-    width: 5%;
-    gap: 15px;
-}
-
-
-.profile-container {
-    background-color: var(--orange-color);
-    border-radius: 30px;
-    width: 250px;
-    height: 400px;
-}
-
-.profile {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    object-fit: cover;
+    width: 70%;
 }
 
 /* FOOTER */
@@ -365,7 +376,7 @@ footer {
 }
 
 @media (min-width: 700px) {
-
+    
 }
 
 @media (min-width: 1200px) {
@@ -373,4 +384,10 @@ footer {
         height: 70vh;
         padding: 20px;
     }
+
+    .image-container {
+        width: 235px;
+    }
+
+
 }
