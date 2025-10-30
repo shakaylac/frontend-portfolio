@@ -9,9 +9,6 @@ const container = document.getElementById('project-gallery');
 const projectTitle = document.getElementById('project-title');
 const nav = document.getElementById('nav');
 
-//if (nav.style.marginTop = '0px') {
-//  nav.style.position = "fixed";
-//}
 
 
 const gradient = document.createElement('div');
@@ -120,3 +117,17 @@ window.__galleryPreview = {
   restoreGalleryGradient,
 };
 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
