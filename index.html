@@ -81,30 +81,25 @@
 
         <section class="ui-designs">
             <h1>UI Designs</h1>
-            <div class="ui-gallery"> 
+            <div class="ui-gallery" onload="showSlides()"> 
                 <div class="fade-slides">
-                    <img src="IMAGES/rooted-portriat-hover-image.png">
+                    <img id="fade-images" src="IMAGES/rp-preview.png" width="100%">
                     <div class="text"> Caption One </div>
                 </div>
 
                 <div class="fade-slides">
-                    <img src="IMAGES/cultivate-hover-image.png">
+                    <img id="fade-images" src="IMAGES/cultivate-hover-image.png" width="100%">
                     <div class="text"> Caption Two </div>
                 </div>
 
                 <div class="fade-slides">
-                    <img src="IMAGES/hover-image.png">
+                    <img id="fade-images" src="IMAGES/tf-preview.png" width="100%">
                     <div class="text"> Caption Three </div>
                 </div>
 
-                <div class="fade-slides">
-                    <img src="#">
-                    <div class="text"> Caption Four </div>
-                </div>
-
-                <!--- Next and Prev Buttons-->
+                <!--- Next and Prev Buttons
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
             </div>
 
             <!-- The dots/circles -->
@@ -114,7 +109,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-                <a href="#see-ui projects" class="see-ui-projects"> See UI Projects</a>
+                <a href="#see-ui projects" class="see-ui-projects-btn"> See UI Projects</a>
         </section>
 
         <section class="call-to-action">

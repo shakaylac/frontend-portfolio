@@ -256,8 +256,10 @@ li img {
   border-radius: 10px;
 }
 
+
 li img { z-index: 5; }
 #preview-hover-image { pointer-events: none; z-index: 2; }
+
 
 
 /* UI DESIGNS */
@@ -266,25 +268,46 @@ li img { z-index: 5; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-image: linear-gradient(to bottom, #2a4034, #0c130f);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .ui-designs h1 {
-    font-family: var(--font-family);
-    padding: 40px;
     color: var(--neutral-color);
+    text-align: center;
 }
 
+/* ===== FIXED SLIDESHOW STYLES ===== */
 .ui-gallery {
-    max-width: 1000px;
     position: relative;
-    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 20px 0;
 }
 
 .fade-slides {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-slides.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fade-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .prev, .next {
@@ -304,24 +327,24 @@ li img { z-index: 5; }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -340,29 +363,16 @@ li img { z-index: 5; }
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.see-ui-projects {
-    background-image: linear-gradient(to bottom, #df8a16, #855410);
-    padding: 10px;
+.see-ui-projects-btn {
+    background-image: linear-gradient(to bottom, #fff, #e2b969);
+    padding: .5em;
+    font-size: 1.2rem;
+    width: 150px;
+    margin: 10px;
     border-radius: 10px;
-    margin: 20px;
-    box-shadow: var(--shadow);
+    border: none;
+    transition: color .3s ease-in;
 }
-
-.see-ui-projects:hover {
-    color: #fff;
-}
-
 
 /* Call To Action */
 .call-to-action {
@@ -496,6 +506,10 @@ footer {
 
     .image-container {
         width: 235px;
+    }
+
+    .ui-designs {
+        height: 100%;
     }
 
 

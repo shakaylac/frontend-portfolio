@@ -87,7 +87,7 @@ if (cultivateEl) {
 
 if (rootedEl) {
   rootedEl.addEventListener('mouseenter', () => {
-    showPreview('./IMAGES/rooted-portriat-hover-image.png');
+    showPreview('./IMAGES/rp-preview.png');
     hoverEnd = '#eea282a6';
     setGalleryGradient(hoverStart, hoverEnd);
   });
@@ -99,7 +99,7 @@ if (rootedEl) {
 
 if (taskflowEl) {
   taskflowEl.addEventListener('mouseenter', () => {
-    showPreview('./IMAGES/hover-image.png');
+    showPreview('./IMAGES/tf-preview.png');
     hoverEnd = '#a24deca1';
     setGalleryGradient(hoverStart, hoverEnd);
   });
@@ -117,17 +117,23 @@ window.__galleryPreview = {
   restoreGalleryGradient,
 };
 
+// ===== FIXED SLIDESHOW CODE =====
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let slides = document.getElementsByClassName("fade-slides");
+  
+  // Remove 'show' class from all slides (fades them out)
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('show');
   }
+
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} 
+  
+  // Add 'show' class to current slide (fades it in)
+  slides[slideIndex-1].classList.add('show');
+  
+  setTimeout(showSlides, 10000); // Change image every 5 seconds
+}
