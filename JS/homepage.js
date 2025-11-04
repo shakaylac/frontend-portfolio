@@ -137,3 +137,6 @@ function showSlides() {
   
   setTimeout(showSlides, 10000); // Change image every 5 seconds
 }
+
+const resumeBtn = document.getElementById('resume-btn');
+
