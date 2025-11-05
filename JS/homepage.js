@@ -10,6 +10,9 @@ const projectTitle = document.getElementById('project-title');
 const nav = document.getElementById('nav');
 
 
+const toGoContact = document.getElementsByClassName('contact-btn');
+
+
 
 const gradient = document.createElement('div');
 gradient.style.width = '100%';
