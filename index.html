@@ -15,16 +15,23 @@
     <header>
         <section class="welcome">
             <div class="welcome-text">
-                <h1>Kaycee C</h1>
+                <a href="index.html" class="title">
+                    <h1>Kaycee C</h1>
+                </a>
                 <h3>Frontend Developer and UI Designer</h3>
             </div>
             <img src="./IMAGES/header-image.jpg" alt="background-image" class="background-image" width="100%" height="auto">
         </section> 
         <nav id="nav">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#ui-designs">UI Designs</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Works</button>
+                    <div class="dropdown-content">
+                        <a href="projects.html">Frontend Work</a>
+                        <a href="uidesigns.html">UI Designs</a>
+                    </div>
+                </div>
+                <li><a href="FrontendUIResume.html">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -111,7 +118,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-                <a href="#see-ui projects" class="see-ui-projects-btn"> See UI Projects</a>
+                <a href="#see-ui projects" class="see-ui-projects-btn"> See UI Designs</a>
         </section>
 
         <section class="call-to-action">
