@@ -102,7 +102,7 @@ if (rootedEl) {
 
 if (taskflowEl) {
   taskflowEl.addEventListener('mouseenter', () => {
-    showPreview('./IMAGES/tf-preview.png');
+    showPreview('./IMAGES/TF/tf-preview.png');
     hoverEnd = '#a24deca1';
     setGalleryGradient(hoverStart, hoverEnd);
   });

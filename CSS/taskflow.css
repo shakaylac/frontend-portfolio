@@ -281,3 +281,23 @@ a:hover {
     transition: color 0.3s ease-in-out;
     cursor: default;
 }
+
+/* Design Approach */
+
+.design-approach {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;    
+    padding: 100px;
+}
+
+.design-approach h2 {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.design-approach p {
+    margin: 20px;
+}
