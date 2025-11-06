@@ -11,7 +11,7 @@
     --yellow-color: #df8a16;
     --neutral-color: #e2b969;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --shadow: 0px 0px 10px 5px #0000002a;
+    --shadow: 0px 0px 15px 4px rgb(170, 170, 170);
 
  }
 
@@ -190,6 +190,7 @@ a:hover {
     padding: 50px;
     height: 80vh;
     background-color: #fff;
+    box-shadow: var(--shadow)
 }
 
 .intro-text {
@@ -222,6 +223,7 @@ a:hover {
     align-items: center;
     padding: 100px;
     gap: 30px;
+
 }
 
 .overview h2 {
@@ -231,4 +233,51 @@ a:hover {
 .overview p {
     font-size: 1.3rem;
     margin-top: -20px;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.features .display {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(85, 85, 85);
+}
+
+.hover-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  rgb(189, 189, 189);
+    padding: 50px;
+    height: 100%;
+    gap: 70px;
+}
+
+.display-titles {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.display-titles:hover {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    cursor: default;
 }
