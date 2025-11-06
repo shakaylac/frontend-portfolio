@@ -212,3 +212,23 @@ a:hover {
     background-color: rgb(189, 189, 189);
 }
 
+/* Overview */ 
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 30px;
+}
+
+.overview h2 {
+    font-size: 2.5rem;
+}
+
+.overview p {
+    font-size: 1.3rem;
+    margin-top: -20px;
+}
