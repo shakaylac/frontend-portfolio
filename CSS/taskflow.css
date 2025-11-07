@@ -188,6 +188,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    
     height: 80vh;
     background-color: #fff;
     box-shadow: var(--shadow)
@@ -196,6 +197,7 @@ a:hover {
 .intro-text {
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
 }
 
 .intro-text h1 {
@@ -204,6 +206,10 @@ a:hover {
 
 .intro-text p {
     font-size: 1.5rem;
+}
+
+.intro-image img {
+    margin-top: 50px;
 }
 
 
@@ -315,7 +321,7 @@ a:hover {
 }
 
 .impact h2 {
-     font-size: 2.5rem;
+    font-size: 2.5rem;
     padding: 20px;
 }
 
@@ -327,11 +333,28 @@ a:hover {
 
 .call-to-action {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 50vh;
     padding: 50px;
-    
+  
+}
 
+.learn-more {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.learn-more h2 {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.learn-more h3 {
+    font-size: 1.5rem;
 }
 
 
