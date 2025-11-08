@@ -255,25 +255,57 @@ a:hover {
 
 .features h2 {
     font-size: 2.5rem;
-    padding: 20px;
 }
 
-.features .display {
+.display {
     display: flex;
     align-items: center;
     height: 80vh;
     width: 100%;
+    overflow: hidden;
     background-color: rgb(85, 85, 85);
+    position: relative;
+}
+
+@keyframes blink {
+      0% {
+        visibility: hidden;
+        opacity: 0;
+      }
+      1% {
+        visibility: visible;
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        visibility: visible;
+      }
+}
+
+
+.instructions {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    bottom: 50px;
+    left: 600px;
+    animation: blink 3s linear infinite;
+    animation-delay: 3s;
 }
 
 .hover-sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background-color:  rgb(189, 189, 189);
-    padding: 50px;
+    padding: 40px 50px;
+    width: 250px;
     height: 100%;
-    gap: 70px;
+    gap: 60px;
 }
 
 .display-titles {
@@ -286,6 +318,79 @@ a:hover {
     color: #fff;
     transition: color 0.3s ease-in-out;
     cursor: default;
+    transform: translateX(5px);
+}
+
+
+.content-display {
+    flex: 1;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.feature-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.feature-image {
+    width: 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8;
+    width: 100%;
+}
+
+.content-display {
+    padding: 30px;
+}
+
+.preview-display {
+    display: flex;
+    width: 100%;
+}
+
+.preview-image {
+    width: 100%;
+    height: auto;
+    filter: 50%;
 }
 
 /* Design Approach */

@@ -49,7 +49,7 @@
                 <p style="color: blueviolet; font-weight: bold;">HTML  CSS  JavaScript  React</p>
             </div>
             <div class="intro-image">
-                <img src="IMAGES/TF/hero-image.png" width="800px" height="auto">
+                <img src="IMAGES/TF/hero-image.png" width="800px" height="auto"/>
             </div>
         </section>
         <section class="overview">
@@ -68,12 +68,64 @@
         <section class="features">
             <h2>Key features</h2>
                 <div class="display">
+                    
                         <div class="hover-sidebar">
-                            <div class="display-titles" id="hover-display">Kanban Board</div>
-                            <div class="display-titles" id="hover-display">Time Tracking</div>
-                            <div class="display-titles" id="hover-display">Project Hub</div>
-                        <div class="display-titles" id="hover-display">Team Messaging</div>
+                            <div class="display-titles" id="hover-display" data-feature="kanban">Kanban Board</div>
+                            <div class="display-titles" id="hover-display" data-feature="tracking">Time Tracking</div>
+                            <div class="display-titles" id="hover-display" data-feature="calendar">Intergrated Calendar</div>
+                            <div class="display-titles" id="hover-display" data-feature="hub">Project Hub</div>
+                        <div class="display-titles" id="hover-display" data-feature="messaging">Team Messaging</div>
                     </div>
+
+                    <h3 class="instructions" id="instructions"> Hover Over Key Features To Learn More</h3>
+
+                    <div class="content-display">
+                        <div class="feature-content" id="kanban">
+                        <img class="feature-image" src="IMAGES/TF/Kanban.png">
+                        <p class="feature-description">
+                            Visual task management system that displays project progress at a glance, from "to-do" through "completed," making it easy for individuals and small teams to track workflow
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="content-display">
+                        <div class="feature-content" id="time-tracking">
+                        <img class="feature-image" src="IMAGES/TF/Time-Tracking.png">
+                        <p class="feature-description">
+                            Built-in time logging for accurate payroll management and client invoicing, allowing project leads to monitor team activity and freelancers to track billable hours
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="content-display">
+                        <div class="feature-content" id="intergrated-calendar">
+                        <img class="feature-image" src="#">
+                        <p class="feature-description">
+                             Monthly overview of projects, meetings, and deadlines with quick scheduling capabilities to keep teams aligned and on track
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="content-display">
+                        <div class="feature-content" id="Project">
+                        <img class="feature-image" src="IMAGES/TF/Project section.png">
+                        <p class="feature-description">
+                             Centralized dashboard displaying all active projects with quick-switch navigation, progress indicators, file uploads, and cross-project messaging that serves as the application's command center
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="content-display">
+                        <div class="feature-content" id="team-messaging">
+                        <img class="feature-image" src="#messaging">
+                        <p class="feature-description">
+                            Communication system integrated across all projects, enabling seamless collaboration without leaving the platform
+                        </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
         </section>
 
@@ -119,6 +171,6 @@
     <footer>
         <p>&copy; 2025 Kayceedev. All rights reserved.</p>
     </footer>
-    <script src="./JS/homepage.js"></script>
+    <script src="./JS/taskflow.js"></script>
 </body>
 </html>
