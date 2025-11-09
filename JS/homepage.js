@@ -27,7 +27,7 @@ if (!container) console.warn('project-gallery element not found');
 const preview = document.createElement('img');
 preview.id = 'preview-hover-image';
 preview.style.position = 'absolute';
-preview.style.zIndex = '10';
+preview.style.zIndex = '-1';
 preview.style.top = '50%';
 preview.style.left = '50%';
 preview.style.transform = 'translate(-50%, -50%)';
@@ -40,25 +40,6 @@ preview.style.pointerEvents = 'none';
 
 if (container) container.appendChild(preview);
 
-// Description box that appears with the preview image when hovering a title
-const previewDesc = document.createElement('div');
-previewDesc.id = 'project-preview-desc';
-previewDesc.style.position = 'absolute';
-previewDesc.style.zIndex = '11';
-previewDesc.style.left = '50%';
-previewDesc.style.bottom = '12px';
-previewDesc.style.transform = 'translateX(-50%)';
-previewDesc.style.background = 'rgba(0,0,0,0.6)';
-previewDesc.style.color = '#fff';
-previewDesc.style.padding = '8px 12px';
-previewDesc.style.borderRadius = '8px';
-previewDesc.style.maxWidth = '80%';
-previewDesc.style.textAlign = 'center';
-previewDesc.style.pointerEvents = 'none';
-previewDesc.style.opacity = '0';
-previewDesc.style.transition = 'opacity 180ms ease';
-if (container) container.appendChild(previewDesc);
-
 // Read original gradient values (fallback to defaults if variables not set)
 const computed = container ? getComputedStyle(container) : null;
 const originalStart = (computed && computed.getPropertyValue('--gallery-grad-start').trim()) || '#df8b16c2';
@@ -68,15 +49,12 @@ const originalEnd = (computed && computed.getPropertyValue('--gallery-grad-end')
 function showPreview(src) {
   if (!src || !container) return;
   preview.src = src;
-  // ensure preview is visible
-  preview.style.display = 'block';
   preview.style.opacity = '1';
   projectTitle.style.opacity = '0';
 }
 
 function hidePreview() {
   preview.style.opacity = '0';
-  preview.style.display = 'none';
   projectTitle.style.opacity = '1';
 }
 
@@ -133,33 +111,6 @@ if (taskflowEl) {
     restoreGalleryGradient();
   });
 }
-
-// --- New: show preview + description when hovering the title text ---
-// Look up thumbnail rows and attach handlers to the title element so hovering the text shows image+desc
-const thumbnailItems = document.querySelectorAll('.thumbnails li');
-thumbnailItems.forEach(li => {
-  const titleEl = li.querySelector('.thumb-title');
-  const imgEl = li.querySelector('img');
-  if (!titleEl || !imgEl) return;
-
-  // optionally allow a longer description via data-desc on the li; fallback to title text
-  const descText = li.dataset.desc || titleEl.textContent.trim();
-
-  titleEl.addEventListener('mouseenter', () => {
-    // ensure only this preview is shown
-    showPreview(imgEl.getAttribute('src'));
-    previewDesc.textContent = descText;
-    previewDesc.style.opacity = '1';
-    // slightly change gradient for hover feedback
-    setGalleryGradient(hoverStart, hoverEnd);
-  });
-
-  titleEl.addEventListener('mouseleave', () => {
-    hidePreview();
-    previewDesc.style.opacity = '0';
-    restoreGalleryGradient();
-  });
-});
 
 // Expose API for dynamic updates from console or other scripts
 window.__galleryPreview = {
