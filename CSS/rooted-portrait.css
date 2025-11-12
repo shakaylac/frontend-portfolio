@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --green-color: #2a4034;
+    --red-color: #8a1f24;
+    --orange-color: #b33f18;
+    --yellow-color: #df8a16;
+    --neutral-color: #e2b969;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow: 0px 0px 15px 4px rgb(170, 170, 170);
+
+ }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-family);
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6; 
+    position: relative; 
+}
+
+/* HEADER */
+
+/* Welcome */
+.welcome {
+    text-align: left;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.title {
+    color: #333;
+    font-size: large;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 3;
+    left: 2%;
+}
+
+.welcome-text h3 {
+    font-size: 1.2rem;
+    color: var(--green-color);
+    font-family: var(--font-family);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.welcome img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+/* Nav */
+nav {
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--green-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+}
+
+
+ /* Dropdown Button */
+.dropbtn {
+    border: none;
+    background-color: #fff;
+    color: var(--green-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: -5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropbtn:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0px 10px 0px 0px;
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+} 
+
+/* MAIN */
+
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, #fff, #590F99);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
