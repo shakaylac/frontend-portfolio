@@ -206,14 +206,14 @@ a:hover {
     margin-top: 30px;
     border-radius: 10px;
     border: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 1s ease-in-out;
 }
 
 .resume-btn:hover,
 .contact-btn:hover {
     background-color: #fff;
     color: var(--orange-color);
-    transition: color 0.3s ease-in-out;
+    transition: color 1s ease-in-out;
 }
 
 
@@ -257,6 +257,7 @@ a:hover {
 
 .project-gallery h1 {
     color: var(--green-color);
+    font-size: 2.5rem;
     padding: 40px;
 }
 
@@ -299,11 +300,13 @@ li img:hover {
     padding: 10px;
 }
 
+
 .thumb-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: -100px;
 }
 
 .thumb-title {
@@ -311,6 +314,7 @@ li img:hover {
     font-weight: bold;
     font-size: 1rem;
     color: #fff;
+    margin-left: 100px;
 }
 
 
@@ -442,6 +446,73 @@ li img { z-index: 5; }
     border: none;
     transition: color .3s ease-in;
 }
+
+/* Process */
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.process h2 {
+    font-size: 2.5rem;
+    padding: 10px;
+    color: var(--red-color)
+
+}
+
+.process h3 {
+    font-weight: bold;
+    color: var(--orange-color);
+    text-align: start;
+}
+
+.sketches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.para {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sketch-1,
+.sketch-2,
+.sketch-3,
+.sketch-4 {
+    width: 12%;
+    height: auto;
+}
+
+.sketch-1:hover,
+.sketch-2:hover,
+.sketch-3:hover,
+.sketch-4:hover {
+    transform: scale(2.5);
+}
+
+.left-align {
+    text-align: start;
+}
+
+.rooted-images {
+    display: flex;
+}
+
+.taskflow-images {
+    display: flex;
+}
+
 
 /* Call To Action */
 .call-to-action {
