@@ -100,6 +100,21 @@ a:hover {
     transition: color 0.3s ease-in-out;
 }
 
+.contact-btn-nav {
+    border: none;
+    background-color: transparent;
+    color: var(--green-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.contact-btn-nav:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
  /* Dropdown Button */
 .dropbtn {
     border: none;
@@ -499,6 +514,7 @@ li img { z-index: 5; }
 .sketch-3:hover,
 .sketch-4:hover {
     transform: scale(2.5);
+    transition: transform 0.3s ease;
 }
 
 .left-align {

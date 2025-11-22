@@ -10,9 +10,17 @@ const projectTitle = document.getElementById('project-title');
 const nav = document.getElementById('nav');
 
 
-const toGoContact = document.getElementsByClassName('contact-btn');
+const toGoContact = document.querySelectorAll('#contact_btn');
 
-
+// Add click event to contact button to scroll to form
+toGoContact.forEach(button => {
+  button.addEventListener('click', () => {
+    const contactForm = document.querySelector('.call-to-action');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
 
 const gradient = document.createElement('div');
 gradient.style.width = '100%';
