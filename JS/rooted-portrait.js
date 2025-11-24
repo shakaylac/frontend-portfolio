@@ -35,3 +35,15 @@ boxes.forEach((box) => {
         }
     });
 });
+
+const toGoContact = document.querySelectorAll('#contact_btn');
+
+// Add click event to contact button to scroll to form
+toGoContact.forEach(button => {
+  button.addEventListener('click', () => {
+    const contactForm = document.querySelector('.call-to-action');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});

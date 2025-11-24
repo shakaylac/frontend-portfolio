@@ -143,6 +143,7 @@ a:hover {
   position: absolute;
   background-color: #fff;
   min-width: 160px;
+  width: 200px;
   border-radius: 0px 10px 10px 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -484,16 +485,7 @@ li img { z-index: 5; }
     text-align: start;
 }
 
-.sketches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    width: 100%;
-    height: auto;
-    gap: 20px;
-}
+
 
 .para {
     text-align: center;
@@ -501,11 +493,13 @@ li img { z-index: 5; }
     padding-right: 10%;
 }
 
+.sketched 
+
 .sketch-1,
 .sketch-2,
 .sketch-3,
 .sketch-4 {
-    width: 12%;
+    width: 100%;
     height: auto;
 }
 
@@ -521,12 +515,34 @@ li img { z-index: 5; }
     text-align: start;
 }
 
+.cultivate-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .rooted-images {
     display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 100%;
 }
 
 .taskflow-images {
     display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.process .image-container {
+    width: 120px;
+}
+
+.process .para-1 {
+    text-align: center;
+    padding: 20px 40px;
 }
 
 
@@ -540,6 +556,7 @@ li img { z-index: 5; }
     margin-top: 100px;
 }
 
+/*
 .connect {
     display: flex;
     justify-content: center;
@@ -552,59 +569,47 @@ li img { z-index: 5; }
     margin-top: -20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
-}
+} */
 
-.connect-form-and-text {
+.connect-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.connect-text p {
-    font-size: .9rem;
-}
-
-.contact-form {
-    background-color: #fff;
-    width: 300px;
-    height: 380px;
-    padding: 20px;
-}
-
-
-.contact-form input {
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    width: 100%;
-    border-color: rgb(197, 197, 197);
-}
-
-.message-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.message {
-    width: 250px;
-    height: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(197, 197, 197);
-}
-
-.submit-btn {
-    width: 80%;
-    padding: 5%;
+    background-color: var(--neutral-color);
+    padding: 30px 100px;
     border-radius: 10px;
-    border: none;
+    box-shadow: var(--shadow);
+    margin-bottom: 100px;
+    margin-left: 60px;
+
+}
+
+.connect-text .buttons {
+    display: flex;
+
 }
 
 
+.resume-btn,
+.email-btn,
+.contact-btn  {
+    background-color: var(--red-color);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.resume-btn:hover,
+.email-btn:hover,
+.contact-btn:hover{
+    background-color: #fff;
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+}
 
 .profile-container {
    display: flex;
@@ -715,21 +720,7 @@ footer {
 }
 
 /*  Call to Action */
-    .connect {
-    display: flex;
-    justify-content: center;
-    background-color: var(--neutral-color);
-    width: 90%;
-    height: auto;
-    padding: 30px;
-    padding-left: 100px;
-    margin: 50px;
-    margin-top: -20px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+    
 
 .connect-form-and-text {
     display: flex;
@@ -851,7 +842,7 @@ footer {
     width: 60%;
     height: 600px;
     padding: 30px;
-    padding-left: 100px;
+    padding-left: 150px;
     margin: 50px;
     margin-top: -20px;
     border-radius: 10px;
@@ -923,13 +914,14 @@ footer {
     border-radius: 30px;
     width: 100%;
     height: 400px;
+    padding-right: 100px;
     margin-top: 60px;
 }
 
 
 .profile-image {
-    width: 100%;
-    height: 100%;
+    width: 240px;
+    height: auto;
     border-radius: 15px;
     object-fit: cover;
 }
@@ -937,7 +929,7 @@ footer {
 .media {
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
 }
 
 
