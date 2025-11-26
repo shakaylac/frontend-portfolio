@@ -188,7 +188,8 @@ a:hover {
 
 /* Hero */
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 60vh;
     overflow: hidden;
@@ -196,8 +197,9 @@ a:hover {
 }
 
 .hero img {
-    width: 750px;
-    height: 900px;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .thing {
@@ -230,14 +232,13 @@ a:hover {
 .overview {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 80vh;
+    justify-content: space-between;
+    height: 60vh;
     margin: 30px;
     margin-top: 50px;
     margin-bottom: 150px;
-    padding: 30px;
-    gap: 500px;
     position: relative;
+    gap: 100px;
 }
 
 .overview-container-1 {
@@ -245,11 +246,16 @@ a:hover {
     align-items: center;
     background-image: linear-gradient(to right, #FFF3E0, #EEA282 );
     width: 80%;
-    padding: 20px;
+    height: auto;
+    padding: 10px;
     border-radius: 0px 10px 10px 0px;
     position: absolute;
     left: 100px;
     top: 0px;
+}
+
+.overview-container-1 .text {
+    margin-left: 5%;
 }
 
 
@@ -274,13 +280,19 @@ a:hover {
     bottom: 0px;
  } 
 
+ .overview-container-2 .text {
+    margin-right: 5%;
+    text-align: end;
+ }
+
  .overview-container-2 > h2 {
-     font-size: 2.5rem;
+     font-size: 2.5em;
     padding: 30px;
+    margin-right: -100px;
  }
 
  .overview-container-2 > p {
-     font-size: 1.5rem;
+     font-size: 1.5em;
  } 
 
  .scroll {
@@ -314,6 +326,7 @@ a:hover {
     left: 10%;
     top: 50px;
     z-index: 2;
+    flex: 1;
 }
 
 .boxes img {
@@ -359,11 +372,33 @@ a:hover {
     font-size: 1.2rem;
  }
 
+ @media screen and (max-width: 412px) {
+    .key-features {
+        height: 230vh;
+    }
+    .boxes-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shadow {
+        width: 85%;
+        height: 25px;
+    }
+
+    .hover-text {
+        opacity: 1;
+        padding: 10px 30px;
+    }
+}
+
+
 /* Design Approach */
 
 .design-approach {
     width: 100%;
-    height: 90vh;
+    height: 120vh;
+    overflow: hidden;
 }
 
 .design-approach h2 {
@@ -378,13 +413,14 @@ a:hover {
 
 .design-approach p {
     padding: 10px 50px;
+    font-size: 1em;
 }
 
 /* Results */
 
 .result {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color:#eea2827a;
 }
 .result h2 {
@@ -402,12 +438,18 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin-right: 150px;
+    padding: 40px;
 }
 
 .see-more h3 {
     font-size: 1.5rem;
     margin: 20px;
+}
+
+.see-more img {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
 }
 
 .git {
@@ -429,19 +471,55 @@ a:hover {
     background-color: #E3735E;
 }
 
+
+@media screen and (max-width: 768px) {
+    .result {
+        height: 130vh;
+    }
+    .see-more {
+        display: flex;
+        flex-direction: column;
+    }
+    .see-more img {
+        width: 100%;
+    }
+    .git {
+        margin-left: 80px;
+    }
+}
+
+
+@media screen and (max-width: 412px) {
+    .result {
+        height: 80vh;
+    }
+    .see-more {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .see-more img {
+        width: 80%;
+    }
+    .git {
+        margin-left: -10px;
+    }
+}
+
 /* Call to action */
 
 .call-to-action {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
     padding: 50px;
   
 }
 
 .learn-more {
-    width: 50%;
+    width: 70%;
     height: auto;
     padding: 20px;
     background-color: #fff;
@@ -486,6 +564,12 @@ a:hover {
     margin-left: 20px;
 }
 
+@media  (max-width: 412px) {
+    .learn-more {
+        width: 400px;
+    }
+}
+
 /* FOOTER */
 footer {
     background-color: var(--orange-color);
@@ -494,3 +578,4 @@ footer {
     color: #1b1b1b;
     padding: 20px;
 }
+
