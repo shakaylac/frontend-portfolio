@@ -245,6 +245,12 @@ a:hover {
     background-color: rgb(189, 189, 189);
 }
 
+@media screen and (max-width: 768px) {
+    .intro-text {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 412px) {
     .intro {
         display: flex;
@@ -284,6 +290,15 @@ a:hover {
 .overview p {
     font-size: 1.3rem;
     margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .overview {
+        height: 150vh;
+    }
+    .overview p {
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -449,6 +464,15 @@ a:hover {
     filter: 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .hover-sidebar {
+        width: 120px;
+    }
+    .display-titles {
+        margin-left: -40px;
+    }
+}
+
 /* Design Approach */
 
 .design-approach {
@@ -468,6 +492,15 @@ a:hover {
 .design-approach p {
     margin: 20px;
     font-size: 1.2rem;
+}
+
+@media screen  and (max-width: 768px) {
+    .design-approach {
+        height: 190vh;
+    }
+    .design-approach p {
+        width: 400px;
+    }
 }
 
 @media  (max-width: 412px) {
@@ -533,19 +566,25 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
-    .result {
-        height: 130vh;
+    .impact {
+        display: flex;
+        height: 120vh;
     }
     .see-more {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
     }
     .see-more img {
-        width: 100%;
+        width: 300px;
     }
+
     .git {
+        width: 300px;
         margin-left: 80px;
     }
+
 }
 
 
@@ -623,6 +662,12 @@ a:hover {
 
 .links a {
     margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .learn-more {
+        width: 500px;
+    }
 }
 
 
