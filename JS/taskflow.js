@@ -36,7 +36,7 @@ titles.forEach((titleEl, idx) => {
         hideAllContents();
         const target = contents[idx];
         if (target) {
-            target.style.display = 'block';
+            target.style.display = 'flex';
             // small visual hook class in case CSS animates .active
             target.classList.add('active');
             // hide the blinking instructions while user is interacting with titles

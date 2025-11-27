@@ -481,11 +481,11 @@ a:hover {
         align-items: center;
         width: 100%;
         height: 50px;
-        margin-top: -500px;
+        margin-top: -600px;
 
     }
     .display {
-       height: 60vh;
+       height: 70vh;
     }
     .display-titles {
         font-size: .9rem;
@@ -493,33 +493,46 @@ a:hover {
     #kanban img {
         display: block;
         width: 400px;
-        margin-left: -436px;
-        margin-top: 150px;
+        margin-left: -825px;
+        margin-top: 50px;
+    }
+    #kanban .feature-description {
+        margin-left: -825px;
     }
     #time-tracking img {
         display: block;
         width: 400px;
-        margin-left: -497px;
-        margin-top: 100px;
+        margin-left: -945px;
+        margin-top: 50px;
+    }
+    #time-tracking .feature-description {
+        margin-left: -940px;
     }
     #intergrated-calendar img {
         display: block;
         width: 400px;
-        margin-left: -556px;
-        margin-top: 100px;
+        margin-left: -1065px;
+        margin-top: 50px;
+    }
+     #intergrated-calendar .feature-description {
+        margin-left: -1065px;
     }
     #Project img {
         display: block;
         width: 400px;
-        margin-left: -616px;
-        margin-top: 100px;
+        margin-left: -1185px;
+        margin-top: 50px;
+    }
+    #Project .feature-description {
+        margin-left: -1190px;
     }
     #team-messaging {
          display: block;
         width: 400px;
         margin-left: -950px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
+
     .feature-content {
         display: flex;
         flex-direction: column;
