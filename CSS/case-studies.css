@@ -85,6 +85,10 @@ ul {
 
 li {
     list-style-type: none;
+    color: var(--green-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    
 }
 
 a {
@@ -99,6 +103,20 @@ a:hover {
     transition: color 0.3s ease-in-out;
 }
 
+.contact-btn-nav {
+    border: none;
+    background-color: transparent;
+    color: var(--green-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.contact-btn-nav:hover {
+    color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
 
  /* Dropdown Button */
 .dropbtn {
@@ -107,7 +125,8 @@ a:hover {
     color: var(--green-color);
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 4px;
+    
     transition: color 0.3s ease-in-out;
 }
 
@@ -128,6 +147,7 @@ a:hover {
   position: absolute;
   background-color: #fff;
   min-width: 160px;
+  width: 200px;
   border-radius: 0px 10px 10px 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -157,3 +177,72 @@ a:hover {
 .dropdown:hover .dropbtn {
     background-color: #fff;
 } 
+
+/* ///////////////////////// */
+
+/* MAIN */
+main {
+    flex: 1 0 auto;
+    padding: 20px 30px;
+}
+
+main > p {
+    color: var(--green-color);
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 20%;
+}
+
+.thumbnail-gallery {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 40px;
+    padding: 40px 50px;
+}
+
+.thumbnail-image {
+    width: 100%;
+    flex: 1 1 auto;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+
+}
+.image-container:hover .thumbnail-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--orange-color);
+    width: 100%;
+    text-align: center;
+    color: #1b1b1b;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+ 
+/* makes thumbanails stack into a single column on smaller screens */
+@media (max-width: 768px) {
+    .thumbnail-gallery {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 50px 10px;
+    }
+}
