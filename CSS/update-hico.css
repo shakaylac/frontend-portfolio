@@ -188,7 +188,7 @@ a:hover {
     width: 100%;
     background-color: #fff;
     margin: 20px 0;
-    box-shadow: var(--shadow);}
+} 
 
 .intro-img {
     width: 100%;
@@ -218,13 +218,24 @@ a:hover {
 .table-of-contents h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .table-of-contents ul {
     display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-left: 40px;
+    flex-direction: column;    
     padding: 0;
+}
+
+.table-of-contents .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-of-contents li {
+    margin: 10px 0;
+    list-style-type: square;
+    font-size: 1.5rem;
 }
 
