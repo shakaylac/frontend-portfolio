@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
  :root {
@@ -85,7 +86,7 @@ ul {
 
 li {
     list-style-type: none;
-    font-weight: bold;
+    
 }
 
 a {
@@ -93,6 +94,7 @@ a {
     color: var(--green-color);
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
+    font-weight: bold;
 }
 
 a:hover {
@@ -173,96 +175,6 @@ a:hover {
 .dropdown:hover .dropbtn {
     background-color: #fff;
 } 
-
-/* ///////////////////////// */
-
-/* MAIN CONTENT */
-
-/* INTRO SECTION */
-.intro-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    width: 100%;
-    background-color: #fff;
-    margin: 20px 0;
-} 
-
-.intro-img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* TABLE OF CONTENTS */
-.table-of-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    margin: 20px 0;
-}
-
-.table-of-contents .container {
-    background-color: #fff;
-    width: 50%;
-    border-radius: 10px;
-    padding: 30px 0px;
-    box-shadow: var(--shadow);
-}
-
-.table-of-contents h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.table-of-contents ul {
-    display: flex;
-    flex-direction: column;    
-    padding: 0;
-}
-
-.table-of-contents .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.table-of-contents li {
-    margin: 10px 0;
-    list-style-type: square;
-    font-size: 1.5rem;
-}
-
-/* PROJECT OVERVIEW */
-.project-overview {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    max-height: 400px;
-    overflow: hidden;
-    padding: 40px 20px;
-    margin: 20px 0;
-}
-
-.project-overview-video {
-    width: 20%;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.project-overview .text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
 
 
 /* FOOTER */
