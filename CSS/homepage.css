@@ -56,8 +56,6 @@ nav {
     cursor: pointer;
 }
 
-
-
 /* ///////////////////////// */
 
 /* MAIN */
@@ -66,24 +64,26 @@ nav {
 
 .intro-section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     text-align: center;
-    padding: 20%;
+    background-image: url("../IMAGES/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .intro-section h2 {
     font-size: 2.5rem;
     padding: 10px;
-    text-align: left;
 }
 
 
 .intro-section p {
     font-family: var(--font-family);
-    text-align: left;
     line-height: 2;
     font-size: 1rem;
     font-weight: 600;
@@ -93,8 +93,56 @@ nav {
     width: 100%;
     flex: 1;
     min-width: 200px;
+    text-align: left;
+    align-self: left;
 }
 
+.intro-message {
+    padding: 40px 80px;
+    background-color: #c3c3c3;
+    text-align: left;
+    justify-self: end;
+}
+
+/* Case Studies */
+
+.case-studes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+
+}
+
+.case-text {
+    padding: 20px 60px;
+}
+
+.case-studies-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.cases {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #c3c3c3;
+    margin: 10px 10px; 
+    border-radius: 5px;
+}
+
+.cases > img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    grid-row: 1 / span 2;
+}
+
+.cases > h2, p {
+    margin: 0px 20px;
+}
 
 /* Projects */
 
