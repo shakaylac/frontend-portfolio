@@ -9,32 +9,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="./CSS/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <title>Kayceedev</title>
 </head>
 <body>
     <header>
-        <nav id="nav">
-           <h1>Shakayla Clark</h1>
-            <button id="contact_btn" class="contact-btn-nav">Contact</button>
-            
+        <nav>
+           <p>Shakayla C</p>
+
+           <div class="nav-buttons">
+                <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
+                <button id="cv_btn" class="cv-btn">CV</button>
+                <button id="contact_btn" class="contact-btn-nav">Contact Me</button>
+            </div>
         </nav>
     </header>
     <main>
         <section class="intro-section">
-            <div class="intro-text">
-                <h2>Hi there!</h2>
-                <p>I am a passionate developer with expertise in <br> UI Design an UX Research. <br>
-                If i'm not writing scripts for homepages or creating <br> user-friendly UI, 
-                I'm coding video games, <br>  
-                tending to my garden, or making small air-dry clay figureines.
-                </p>
-                <p>Feel free to explore my projects, check out my resume, and get in touch!</p>
+
+            <div class="intro">
+                <h1>Hello!</h1>
+
+                <h2>UI/UX Desinger</h2>
+
+                <p class="blurb"><span style="color: #344E0A";><strong>Clean</strong></span> and <span style="color: #344E0A";><strong>Simple</strong></span> web design</p>
+
+                <p class="name">Shakayla Clark</p>
+            
             </div>
 
-            <div class="intro-message">
-                <h1> Something Something </h1>
-                <p> More something something.</p>
-            </div>
+        </section>
+
+        <section class="landing-pages">
+                <h1>Landing Pages</h1>
+                <p>subheader that may be deleted later.</p>
+
+                <div class="landing-cards">
+                    <div class="landing-card">
+                        <div class="green-block"></div>
+                        <div class="text">
+                            <h2>Forager</h2>
+                            <p>Know what <span style="color: #5C7A4E"><em>grows</em></span> around you.</p>
+                            <a href="forager-landing.html" class="landing-button">View Landing Page</a>
+                        </div>
+
+                        <img src="IMAGES/phone_cluster.png">
+                    </div>
+                </div>
 
         </section>
 
@@ -45,23 +71,29 @@
             </div>
 
             <div class="case-studies-section">
-                <div class="cases">
-                    <img src="#project-image">
-                    <h2>Project Header</h2>
-                    <p>Project Description</p>
-                </div>
+                <a href="rooted-portrait.html">
+                    <div class="cases">
+                        <img src="/IMAGES/rp-preview.png">
+                        <h2>Rooted Portrait</h2>
+                        <p>Project Description</p>
+                    </div>
+                </a>
 
-                <div class="cases">
-                    <img src="#project-image">
-                    <h2>Project Header</h2>
-                    <p>Project Description</p>
-                </div>
+                <a href="taskflow.html">
+                    <div class="cases">
+                        <img src="IMAGES/TF/tf-preview.png">
+                        <h2>Taskflow</h2>
+                        <p>Project Description</p>
+                    </div>
+                </a>
 
-                <div class="cases">
-                    <img src="#project-image">
-                    <h2>Project Header</h2>
-                    <p>Project Description</p>
-                </div>
+                <a href="forager-case-study.html">
+                    <div class="cases">
+                        <img src="IMAGES/loading_screen.png" style="background-color: #24402A;">
+                        <h2>Project Header</h2>
+                        <p>Project Description</p>
+                    </div>
+                </a>
             </div>
 
         </section>
@@ -173,6 +205,25 @@
                 <a href="#see-ui projects" class="see-ui-projects-btn"> See UI Designs</a>
         </section>
         -->
+        <section class="form">
+           <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/mrejelaw" method="POST">
+                <label for="name">
+                    Name:*
+                </label>
+                <input type="text" name="name" aria-required="true">
+                <label for="email">
+                    Email:*
+                </label>
+                <input type="email" name="email" aria-required="true">
+                <label for="message">
+                    Message:*
+                    </label>
+                    <textarea name="message" aria-required="true"></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
         <section class="call-to-action">
             
