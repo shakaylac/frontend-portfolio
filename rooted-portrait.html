@@ -12,32 +12,15 @@
     <title>Rooted Portrait</title>
 </head>
 <body>
-    <header>
-        <section class="welcome">
-            <div class="welcome-text">
-                <a href="index.html" class="title">
-                    <h1>Kaycee C</h1>
-                </a>
-                <h3>Frontend Developer and UI Designer</h3>
+   <header>
+        <nav>
+           <p>Shakayla C</p>
+
+           <div class="nav-buttons">
+                <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
+                <button id="cv_btn" class="cv-btn">CV</button>
+                <button id="contact_btn" class="contact-btn-nav">Contact Me</button>
             </div>
-            <img src="./IMAGES/header-image.jpg" alt="background-image" class="background-image" width="100%" height="auto">
-        </section> 
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                         <a href="case-studies.html">Case Studies</a>
-                        <a href="ui-designs.html">UI Designs</a>
-                        <a href="#homepage-update" style="color: grey;">Homepage Update</a>
-                   <!--     <a href="#">Cultivate</a> -->
-                    <!--    <a href="uidesigns.html">UI Designs</a> -->
-                    </div>
-                </div>
-                <li><a href="FrontendUIResume.html" target="_blank">Resume</a></li>
-                <li><button id="contact_btn" class="contact-btn-nav">Contact</button></li>
-            </ul>
         </nav>
     </header>
 
@@ -78,13 +61,24 @@
                 <div class="overview-container-2">
                     <div class="text">
                         <p>
-                            Create a warm, inviting booking experience that reflects the brand's philosophy of natural beauty
-                            while showcasing the photographer's portfolio in a way that inspires potential clients.
+                            Most photography booking sites treat the gallery and the booking flow as two separate concerns bolted together — a portfolio page here, a scheduling widget there. For a body-positive brand, that disconnect matters more than usual: the visual experience of the gallery needs to carry the brand's message right up until the moment someone books, not stop short of it.
                         </p>
-                        <h2>The Challenge</h2>
+                        <h2>The Problem</h2>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="goals">
+            <h2>Goals</h2>
+            <ul>
+                <li>Create a warm, inviting booking experience that reflects the brand's philosophy of natural beauty</li>
+                <li>Showcase the photographer's portfolio in a way that inspires potential clients, not just displays work</li>
+                <li>Carry the brand's color and shape language through every section, so the site feels cohesive rather than templated</li>
+            </ul>
+            <p class="approach-note">
+                This project was design-led rather than research-driven — the decisions below came from direct exploration and iteration on the brand itself, not competitive analysis or user testing.
+            </p>
         </section>
 
         <section class="key-features">
@@ -114,36 +108,37 @@
         </section>
 
         <section class="design-approach">
-            <h2>Design Reasonings</h2>
+            <h2>Key Decisions</h2>
 
-                <h3>Color Scheme</h3>
+            <div class="decision">
+                <h3>Flesh tones over skin tones</h3>
                 <p>
-                I faced some design Challenges while building this site. I was going back and forth with the color scheme. Choosing skintones was the first thought. 
-                Thinking of browns and tans for the colors on my site felt blands in some respects. The solution was to lean more into flesh tones instead of skin,
-                this includes the pinks and deep reds that you see throughout the site. 
+                    Early color exploration leaned toward browns and tans as the literal palette for a body-positive brand, but that read as flat rather than warm. Shifting the language from "skin tones" to "flesh tones" opened the palette up to the pinks and deep reds used throughout the site now — colors that still feel organic and human, without flattening into a single literal skin color.
                 </p>
-                <br>
+            </div>
 
+            <div class="decision">
+                <h3>Gold as the accent, not another red</h3>
                 <p>
-                The idea for accent color can from wanting something that pops. Darker reds would blend in to much and wouldn't alert users to them. The golden yellow Color
-                works because it harmonizes well with the pinks and reds and stands out perfectly! 
-                 </p>
-                 <br>
-
-                 <h3>Staggered Elements</h3>
-                 <p>
-                The staggered images and elements that you see through the site came from the idea of growth and nature. The staggered images resembling the way branches
-                grow up towards the sky. The offest columns are staggered to give the website a more oganic feel while still being organized. I stayed away from making the elements' borders
-                circlar, or leaf-like , because it would take away from the images being displayed. The images need to be the main focus here so they need to be a "normal".
+                    A darker red was the first instinct for an accent color, but it blended into the rest of the palette instead of standing out. The golden yellow does what the darker red couldn't: it harmonizes with the pinks and reds while still being distinct enough to draw the eye to calls-to-action.
                 </p>
+            </div>
 
-            </p>
+            <div class="decision">
+                <h3>Staggered layout, ordinary image edges</h3>
+                <p>
+                    The staggered columns throughout the site are a deliberate nod to growth and nature — offset the way branches reach upward, giving the layout an organic feel without losing structure. I deliberately kept image containers rectangular rather than circular or leaf-shaped: the photography itself needs to be the focal point, and an ornamental frame around every portrait would compete with the work it's meant to showcase.
+                </p>
+            </div>
         </section>
 
         <section class="result">
             <h2>Results</h2>
             <p>
                 Created an intuitive user experience that aligns with the brand's body-positive mission.
+            </p>
+            <p>
+                Because this project was design-led rather than tested with real users, the natural next step would be putting the gallery and booking flow in front of actual clients — particularly to see whether the staggered layout holds up as a usability choice, not just a visual one, once real photos and real booking data are in it.
             </p>
 
             <div class="see-more">
