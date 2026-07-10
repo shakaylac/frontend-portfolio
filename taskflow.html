@@ -9,23 +9,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="./CSS/taskflow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Taskflow</title>
 </head>
 <body>
      <header>
-        <section class="welcome">
-            <img src="./IMAGES/header-image.jpg" alt="background-image" class="background-image" width="100%" height="auto">
-        </section> 
-        <nav>
-           <p>Shakayla C</p>
+      <nav>
+           <a href="index.html"><p>Shakayla C</p></a>
 
            <div class="nav-buttons">
                 <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
-                <button id="cv_btn" class="cv-btn">CV</button>
-                <button id="contact_btn" class="contact-btn-nav">Contact Me</button>
+                <a href="FrontendUIResume.html"><button id="cv_btn" class="cv-btn">CV</button></a>
+                <a href="mailto:shakayla220@yahoo.com"><button id="contact_btn" class="contact-btn-nav">Contact Me</button></a>
             </div>
         </nav>
-
+        
     </header>
     <main>
         <!--
@@ -35,20 +35,33 @@
         -->
         <section class="intro">
             <div class="intro-text">
-                <h1>Taskflow</h1>
-                <p>Project Management Web App for Small Teams</p>
-                <p style="color: blueviolet; font-weight: bold;">HTML  CSS  JavaScript  React</p>
+                <div class="title-text">
+                    <p class="project-name">Taskflow </p>
+                    <p class="project-type"> - Case Study</p>
+                </div>
+                <h1>The perfect project manager for small teams</h1>
+                <span>Taskflow is a streamlined project management application designed specifically for small businesses and freelancers who need <strong style="color: blueviolet;"><em>powerful</em></strong> organizational tools without enterprise-level complexity. The app balances <strong style="color: blueviolet;"><em>simplicity</em></strong> with <strong style="color: blueviolet;"><em>scalability</em></strong>, allowing teams to efficiently manage workloads from initial planning through completion.</span>
+                
+                <div class="project-info">
+                    <p><strong style="color: blueviolet;">ROLE</strong> - UI Designer (solo)</p>
+                    <p><strong style="color: blueviolet;">TIMEFRAME</strong> - 168 Hours</p>
+                    <P><strong style="color: blueviolet;">TOOLS</strong> - Figma Concepts  </P>
+                    <p><strong style="color: blueviolet;">TYPE</strong> - Concept Web App</p>
+                </div>
+
+
+                <!--<ul style="font-family: 'inter';">
+                    <li>CSS</li>    
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>-->
             </div>
             <div class="intro-image">
-                <img src="IMAGES/TF/hero-image.png" width="105%" height="auto"/>
+                <!--<img src="IMAGES/TF/hero-image.png" width="105%" height="auto"/>-->
             </div>
         </section>
         <section class="overview">
-                <h2>Overview</h2>
-                    <p>
-                        Taskflow is a streamlined project management application designed specifically for small businesses and freelancers who need <strong style="color: blueviolet;"><em>powerful</em></strong> organizational tools without enterprise-level complexity. The app balances <strong style="color: blueviolet;"><em>simplicity</em></strong> with <strong style="color: blueviolet;"><em>scalability</em></strong>, allowing teams to efficiently manage workloads from initial planning through completion.
-                    </p>
-
+               
                 <h2>The Problem</h2>
                     <p>
                         Small teams and freelancers are usually stuck choosing between two bad options: enterprise platforms like Asana or Monday that come with more configuration than a five-person team will ever use, or a patchwork of separate to-do apps, spreadsheets, and messaging tools that don't talk to each other. Taskflow's challenge was building something with enough structure to actually organize a team's work, without the setup overhead of tools built for hundreds of people.
@@ -60,11 +73,11 @@
                     </p>
 
                 <h2>Goals</h2>
-                    <ul style="font-size: 1.3rem; line-height: 1.8; max-width: 700px; margin: 0 auto; text-align: left;">
-                        <li>Reduce setup and navigation overhead compared to enterprise PM tools</li>
-                        <li>Consolidate redundant surfaces (like duplicate scheduling views) that add clicks without adding value</li>
-                        <li>Build a dedicated hub for cross-project work — messaging, files, project switching — instead of scattering it across separate pages</li>
-                        <li>Keep the interface legible enough for a solo freelancer, while still functional for a growing team</li>
+                    <ul style="font-size: 1.3rem; line-height: 1.8; max-width: 1300px; margin: 0 auto; text-align: left; padding: 50px 0px 50px 0px">
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 90px; opacity: 20%;">1</strong> Reduce setup and navigation overhead compared to enterprise PM tools</li>
+                        <li><strong  style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 380px; opacity:20%;">2</strong> Consolidate redundant surfaces (like duplicate scheduling views) that add clicks without adding value</li>
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 695px; opacity: 20%; ">3</strong> a dedicated hub for cross-project work — messaging, files, project switching — instead of scattering it across separate pages</li>
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 975px; opacity: 20%;">4</strong>Keep the interface legible enough for a solo freelancer, while still functional for a growing team</li>
                     </ul>
 
         </section>
@@ -133,6 +146,30 @@
                 </div>
         </section>
 
+        <section class="planning">
+            <h2>Planning the Structure</h2>
+            <p>
+                Before writing any code, I mapped Taskflow's structure across three layers — what pages exist, what content lives on each one, and what a user can actually do at every step.
+            </p>
+            <div class="map-grid">
+                <div class="map-item">
+                    <img src="IMAGES/TF/site-map.png" alt="Taskflow site map showing the page hierarchy">
+                    <h3>Site Map</h3>
+                    <p>The page hierarchy — how Kanban, Projects, Time Tracking, and Scheduling branch off the homepage and sidebar.</p>
+                </div>
+                <div class="map-item">
+                    <img src="IMAGES/TF/content-map.png" alt="Taskflow content map showing fields and content on each page">
+                    <h3>Content Map</h3>
+                    <p>What content and input fields live on each page — like the Title, Priority, Timeframe, and Description fields inside the New Project form.</p>
+                </div>
+                <div class="map-item">
+                    <img src="IMAGES/TF/interactive-map.png" alt="Taskflow interactive map showing edit, delete, and add actions">
+                    <h3>Interactive Map</h3>
+                    <p>Every actionable element — edit, delete, add — and how Events, Meetings, and Deadlines all funnel into the calendar.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="design-approach">
             <h2>Key Decisions</h2>
 
@@ -149,12 +186,41 @@
                     Removing the redundant scheduling page freed up room to prioritize something competitor apps treat as an afterthought: a single Project Hub housing messaging, file uploads, and project switching. Freelancers and small teams are usually juggling more than one project at a time — this keeps the cross-project context in one place instead of forcing users to dig through separate tabs for each project.
                 </p>
             </div>
-
+<!-- Omit talk of hover feat.
             <div class="decision">
                 <h3>Hover-to-reveal feature discovery</h3>
                 <p>
                     The Key Features section above uses a hover sidebar instead of a long scroll of static screenshots. Visitors control the pace themselves — scan the five feature names, hover whichever one is relevant to them — rather than scrolling past four features to get to the one they care about.
                 </p>
+            </div>
+-->
+            <div class="decision">
+                <h3>Letting users make it theirs</h3>
+                <p>
+                    Taskflow ships with five color themes — the default purple, plus Honey, Meadow, Ocean, and Sunset — so a team's workspace doesn't look identical to everyone else's. Since small teams and freelancers often spend their whole workday in a tool like this, a low-effort way to personalize the interface felt worth the relatively small implementation cost. It's a small detail, but it's the difference between a tool that feels utilitarian and one that feels considered.
+                </p>
+                <div class="theme-grid">
+                    <div class="theme-swatch">
+                        <img src="IMAGES/TF/theme-default.png" alt="Default purple theme">
+                        <span>Default</span>
+                    </div>
+                    <div class="theme-swatch">
+                        <img src="IMAGES/TF/theme-honey.png" alt="Honey theme">
+                        <span>Honey</span>
+                    </div>
+                    <div class="theme-swatch">
+                        <img src="IMAGES/TF/theme-meadow.png" alt="Meadow theme">
+                        <span>Meadow</span>
+                    </div>
+                    <div class="theme-swatch">
+                        <img src="IMAGES/TF/theme-ocean.png" alt="Ocean theme">
+                        <span>Ocean</span>
+                    </div>
+                    <div class="theme-swatch">
+                        <img src="IMAGES/TF/theme-sunset.png" alt="Sunset theme">
+                        <span>Sunset</span>
+                    </div>
+                </div>
             </div>
 
             <p style="margin-top: 40px;">
@@ -186,19 +252,19 @@
                 <h2>Learn More</h2>
                     <div class="contacts">
                         <a href="FrontendUIResume.html">
-                            <button class="resume-btn">See Resume</button>
+                            <button class="resume-btn">CV</button>
                         </a>
-                            <a href="mailto:kaycee@myyahoo.com">
+                            <a href="mailto:shakayla220@yahoo.com">
                             <button class="email-btn">Email</button>
                         </a>
                     </div>
 
                     <div class="more-work">
-                        <h3>More Work</h3>
+                        <h3>See My Other Works</h3>
                         <div class="links">
-                            <a href="taskflow.html">TaskFlow</a>
                             <a href="rooted-portrait.html">Rooted Portrait</a>
-                             <a href="index.html">Home</a>
+                            <a href="forager-case-study.html">Forager's Log</a>
+                            <a href="index.html">Home</a>
                         </div>
                     </div>
                 </div>

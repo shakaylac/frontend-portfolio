@@ -11,6 +11,7 @@
     --yellow-color: #df8a16;
     --neutral-color: #e2b969;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --inter: 'Inter';
     --shadow: 0px 0px 5px 1px rgb(170, 170, 170);
 
  }
@@ -67,7 +68,7 @@ body {
     transform: scaleX(-1);
 }
 
-/* Nav */
+/* NAV */
 
 nav {
     display: flex;
@@ -82,11 +83,14 @@ nav {
     font-family: var(--main-font);
 }
 
-nav > p {
+nav > a {
     font-size: 1.2rem;
     color: #fff;
     margin-right: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
     font-family: var(--main-font);
+    text-decoration: none;
 }
 
 
@@ -98,6 +102,7 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     transition: color 0.3s ease-in-out;
     text-align: end;
     margin-bottom: 4px;
+    margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     font-family: var(--main-font);
@@ -121,7 +126,6 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     transition: color 0.3s ease-in-out;
     cursor: pointer;
 }
-
 
 /* MAIN */
 
@@ -152,8 +156,14 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     align-items: center;
     padding: 50px;
     height: 80vh;
+    padding-top: 80px;
     background-color: #fff;
     box-shadow: var(--shadow)
+}
+
+.title-text {
+    display: flex;
+    
 }
 
 .intro-text {
@@ -163,10 +173,50 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 }
 
 .intro-text h1 {
-    font-size: 7rem;
+    font-size: 3rem;
+}
+
+.intro-text .project-name {
+    font-size: 2rem;
+    font-family: var(--inter);
+    font-weight: 600;
+    background-image: linear-gradient(to right, #3CA4FF, #941AFF);
+    background-size: 150px; /* gradient stays fully within text */
+    background-clip: text;
+    color: transparent; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.project-type {
+    font-family: var(--font-family);
+    color: #333;
+    font-size: 1rem;
+
 }
 
 .intro-text p {
+    font-size: 2rem;
+    font-family: var(--font-family);
+}
+
+span {
+    font-size: 1.3rem;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 70%;
+    place-items: center;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.project-info p {
+    font-family: var(--font-family);
     font-size: 1.5rem;
 }
 
@@ -226,6 +276,21 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 .overview p {
     font-size: 1.3rem;
     margin-top: -20px;
+}
+
+.overview ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    list-style-type: none;
+    
+}
+
+.overview li {
+    font-size: 1.3rem;
+    width: 80%;
+    justify-self: center;
+    margin-left: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -485,6 +550,70 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     }
 }
 
+/* Planning */
+
+.planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.planning h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.planning > p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.map-item {
+    max-width: 320px;
+    text-align: left;
+}
+
+.map-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+}
+
+.map-item h3 {
+    font-size: 1.2rem;
+    color: var(--green-color);
+    margin-bottom: 8px;
+}
+
+.map-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .planning {
+        padding: 50px 25px;
+    }
+    .map-item {
+        max-width: 400px;
+    }
+}
+
 /* Design Approach */
 
 .design-approach {
@@ -533,6 +662,38 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     margin-bottom: 10px;
 }
 
+.theme-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.theme-swatch {
+    width: 110px;
+    text-align: center;
+}
+
+.theme-swatch img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 6px;
+}
+
+.theme-swatch span {
+    font-size: 0.85rem;
+    color: var(--ink-soft, #555);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 412px) {
+    .theme-swatch {
+        width: 80px;
+    }
+}
+
 @media screen  and (max-width: 768px) {
     .design-approach {
         height: auto;
@@ -561,7 +722,7 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
      display: flex;
     flex-direction: column;
     height: 90vh;
-    padding: 50px;
+    padding: 0px 50px;
     background-color: #fff;
     box-shadow: var(--shadow);
 }
@@ -657,33 +818,42 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     align-items: center;
     height: 50vh;
     padding: 50px;
+    color: #0000003a
   
 }
 
 .learn-more {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
     width: 50%;
     height: auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: var(--shadow);
+    color: #333;
+    background-color: #590f9973;
+    border-radius: 5px;
 }
 
 .learn-more h2 {
     font-size: 2.5rem;
+    font-family: var(--font-family);
 }
 
 .learn-more h3 {
     font-size: 1.5rem;
+    margin-left: 70px;
 }
 
 .resume-btn,
 .email-btn {
     font-family: var(--font-family);
-    background-color: var(--red-color);
+    background-color: #fff;
     padding: .5em;
     font-size: 1.2rem;
+    width: 150px;
     margin: 10px;
-    color: #fff;
+    color: #590f998e;
+    font-weight: 600;
     margin-top: 30px;
     border-radius: 10px;
     border: none;
@@ -692,8 +862,7 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 
 .resume-btn:hover,
 .email-btn:hover {
-    background-color: #fff;
-    color: var(--orange-color);
+    color: #590f99;
 }
 
 .more-work {
@@ -703,7 +872,8 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 }
 
 .links a {
-    margin-left: 20px;
+    text-decoration: none;
+    padding: 0px 20px;
 }
 
 @media screen and (max-width: 768px) {

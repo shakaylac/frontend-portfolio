@@ -156,6 +156,10 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     padding: 20px 60px;
 }
 
+.landing-pages > h1 {
+    font-size: 3.2rem;
+}
+
 .green-block {
     background-color: #24402A;
     width: 1020px;
@@ -251,6 +255,10 @@ a {
 
 .case-text {
     padding: 20px 60px;
+}
+
+.case-studies > .case-text > h1 {
+    font-size: 3.2rem;
 }
 
 .case-studies-section {

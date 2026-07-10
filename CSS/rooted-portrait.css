@@ -86,11 +86,14 @@ nav {
     font-family: var(--main-font);
 }
 
-nav > p {
+nav > a {
     font-size: 1.2rem;
     color: #fff;
     margin-right: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
     font-family: var(--main-font);
+    text-decoration: none;
 }
 
 
@@ -102,6 +105,7 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     transition: color 0.3s ease-in-out;
     text-align: end;
     margin-bottom: 4px;
+    margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     font-family: var(--main-font);
@@ -338,6 +342,9 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 /* Goals */
 
 .goals {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
     padding: 40px 100px 20px;
 }
 
@@ -384,6 +391,9 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 /* Design Approach */
 
 .design-approach {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
     padding-bottom: 60px;
@@ -527,35 +537,44 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     padding: 50px;
+    color: #0000003a
   
 }
 
 .learn-more {
-    width: 70%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    width: 50%;
     height: auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: var(--shadow);
+    color: #333;
+    background-color: #eea2827a;
+    border-radius: 5px;
 }
 
 .learn-more h2 {
     font-size: 2.5rem;
+    font-family: var(--font-family);
 }
 
 .learn-more h3 {
     font-size: 1.5rem;
+    margin-left: 50px;
 }
 
 .resume-btn,
 .email-btn {
     font-family: var(--font-family);
-    background-color: var(--red-color);
+    background-color: #fff;
     padding: .5em;
     font-size: 1.2rem;
+    width: 150px;
     margin: 10px;
-    color: #fff;
+    color: #eea2829c;
+    font-weight: 600;
     margin-top: 30px;
     border-radius: 10px;
     border: none;
@@ -564,8 +583,7 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 
 .resume-btn:hover,
 .email-btn:hover {
-    background-color: #fff;
-    color: var(--orange-color);
+    color: #ee8282;
 }
 
 .more-work {
@@ -575,7 +593,8 @@ nav > .nav-buttons > .case-studies-btn, .cv-btn, .contact-btn-nav {
 }
 
 .links a {
-    margin-left: 20px;
+    text-decoration: none;
+    padding: 0px 20px;
 }
 
 @media  (max-width: 412px) {
