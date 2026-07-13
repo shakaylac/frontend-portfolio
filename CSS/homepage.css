@@ -816,7 +816,7 @@ footer {
 }
 
 
-@media (min-width: 450px) {
+@media (max-width: 600px) {
  
 /* Sidebar */
 
