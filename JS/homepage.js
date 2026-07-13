@@ -1,13 +1,14 @@
 // Gallery hover-preview and dynamic gradient control
 // - Uses CSS custom properties on #project-gallery so JS can change the gradient colors at runtime.
 // - Shows a single preview image when hovering project thumbnails and swaps the gallery transparent color.
-
+/*
 const cultivateEl = document.getElementById('cultivate');
 const rootedEl = document.getElementById('rooted-portrait');
 const taskflowEl = document.getElementById('taskflow');
 const container = document.getElementById('project-gallery');
 const projectTitle = document.getElementById('project-title');
 const nav = document.getElementById('nav');
+const sidebarBtn = document.getElementById('sb-menu-btn');
 
 
 const toGoContact = document.querySelectorAll('#contact_btn');
@@ -150,4 +151,36 @@ function showSlides() {
 }
 
 const resumeBtn = document.getElementById('resume-btn');
+*/
 
+
+
+/*
+const menuBtn = document.getElementById('sb-menu-btn');
+const sideBar = document.getElementById('sidebar');
+
+menuBtn.addEventListener("click", () => {
+  if (sideBar.style.display === "none") {
+    sideBar.style.display = "block";
+  } else {
+    sideBar.style.display = "none";
+  }
+});*/
+
+const menuBtn = document.getElementById('sb-menu-btn');
+const sideBar = document.getElementById('sidebar');
+
+/*
+menuBtn.addEventListener("click", () => {
+  sideBar.classList.toggle("open");
+}); */
+
+menuBtn.addEventListener("click", () => {
+  const isHidden = window.getComputedStyle(sideBar).display === "none";
+
+  if (isHidden) {
+    sideBar.style.display = "block";
+  } else {
+    sideBar.style.display = "none";
+  }
+});

@@ -36,6 +36,7 @@ boxes.forEach((box) => {
     });
 });
 
+/*
 const toGoContact = document.querySelectorAll('#contact_btn');
 
 // Add click event to contact button to scroll to form
@@ -46,4 +47,18 @@ toGoContact.forEach(button => {
       contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
+}); */
+
+const menuBtn = document.getElementById('sb-menu-btn');
+const sideBar = document.getElementById('sidebar');
+
+
+menuBtn.addEventListener("click", () => {
+  const isHidden = window.getComputedStyle(sideBar).display === "none";
+
+  if (isHidden) {
+    sideBar.style.display = "block";
+  } else {
+    sideBar.style.display = "none";
+  }
 });

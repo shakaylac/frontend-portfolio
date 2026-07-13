@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kayceedev - Portfolio">
     <meta name="author" content="Kaycee">
-    <meta name="url" content="https://kayceedev.com">
+    <meta name="url" content="https://Shakayla_Clark_Portfoli.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="./CSS/homepage.css">
@@ -15,19 +15,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-    <title>Kayceedev</title>
+    <title>ShakaylaClark_Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-           <p>Shakayla C</p>
+           <a href="index.html"><p>Shakayla C</p></a>
 
            <div class="nav-buttons">
-                <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
-                <button id="cv_btn" class="cv-btn">CV</button>
-                <button id="contact_btn" class="contact-btn-nav">Contact Me</button>
+            <div class="dropdown">
+                    <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
+                    <div class="dropdown-content">
+                        <a href="rooted-portrait.html">Rooted Portrait</a>
+                        <a href="taskflow.html">Taskflow</a>
+                        <a href="forager-case-study.html">Forager's Log</a>
+                    </div>
+                </div>
+                <a href="Frontend_UI_Resume_2.html"><button id="cv_btn" class="cv-btn">CV</button></a>
+                <a href="mailto:shakayla220@yahoo.com"><button id="contact_btn" class="contact-btn-nav">Contact Me</button></a>
             </div>
+
+            <button class="sb_menu_btn" id="sb-menu-btn">
+                <img src="IMAGES/Menu.png" alt="">
+            </button>
+
+                <div id="sidebar" class="sidebar">
+                <ul>
+                    <li class="sb-case-studies"> Case Studies </li>
+                        <a href="rooted-portrait.html"><li class= "cs-links">Rooted Portrait</li></a>
+                        <a href="taskflow.html"><li class= "cs-links">Taskflow</li></a>
+                        <a href="forager-case-study.html"><li class= "cs-links">Forager's Log</li></a>
+                    </li>
+                    <a href="Frontend_UI_Resume_2.html"><li>CV</li></a>
+                    <a href="mailto:shakayla220@yahoo.com"><li>Contact Me</li></a>
+                </ul>
+            </div>
+
         </nav>
+
     </header>
     <main>
         <section class="intro-section">
@@ -266,7 +291,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Kayceedev. All rights reserved.</p>
+        <p>&copy; 2026 Shakayla Clark. All rights reserved.</p>
     </footer>
     <script src="./JS/homepage.js"></script>
 </body>

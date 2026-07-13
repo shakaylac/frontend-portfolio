@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./CSS/forager-case-study.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 <style>
   :root{
     --parchment:#efe8d8;
@@ -148,25 +151,51 @@
 
 
   <div class="ps-nav">
-      <a href="index.html"></a><p class="ps-logo">Shakayla C</p></a>
+      <a href="index.html"><p class="ps-logo">Shakayla C</p></a>
 
-      <div>
-          <a href=""><button class="case-studies-btn">Case Studies</button></a>
-          <a href="FrontendUIResume.html"><button class="cv-btn">CV</button></a>
-          <a href=""><button class="contact-btn-nav">Contact Me</button></a>
+      <div class="ps-nav-links">
+        <div class="dropdown">
+                    <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
+                    <div class="dropdown-content">
+                        <a href="rooted-portrait.html">Rooted Portrait</a>
+                        <a href="taskflow.html">Taskflow</a>
+                        <a href="forager-case-study.html">Forager's Log</a>
+                    </div>
+                </div>
+          <a href="Frontend_UI_Resume_2.html"><button class="cv-btn">CV</button></a>
+          <a href="mailto:shakayla220@yahoo.com"><button class="contact-btn-nav">Contact Me</button></a>
       </div>
+
+      <button class="sb_menu_btn" id="sb-menu-btn">
+                <img src="IMAGES/Menu.png" alt="">
+            </button>
+
+                <div id="sidebar" class="sidebar">
+                <ul>
+                    <li class="sb-case-studies"> Case Studies </li>
+                        <a href="rooted-portrait.html"><li class= "cs-links">Rooted Portrait</li></a>
+                        <a href="taskflow.html"><li class= "cs-links">Taskflow</li></a>
+                        <a href="forager-case-study.html"></a><li class= "cs-links">Forager's Log</li></a>
+                    </li>
+                    <a href="Frontend_UI_Resume_2.html"><li>CV</li></a>
+                    <a href="mailto:shakayla220@yahoo.com"><li>Contact Me</li></a>
+                </ul>
+            </div>
+
+
+
     </div>
 
 
-<nav>
-  <div class="nav-inner">
+<nav style="z-index: 2;">
+  <div class="nav-inner" style="background-color: #efe8d8;">
     <a href="index.html" style="text-decoration: none;">
       <div class="logo">
         <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 6 5 10 5 14a7 7 0 0014 0c0-4-3-8-7-12z" fill="#24402a"/><path d="M12 22V10" stroke="#efe8d8" stroke-width="1.4"/></svg>
         FORAGER'S LOG
       </div>
     </a>
-    <a class="back-link" href="forager-landing.html">← Back to landing page</a>
+    <a class="back-link" href="forager-landing.html">← View the landing page</a>
   </div>
 </nav>
 
@@ -317,6 +346,7 @@
         <a class="btn btn-outline" href="mailto:shakayla220@yahoo.com">Get in Touch</a>
       </div>
     </div>
+    <P style="padding: 20px 50px; font-size: 1.5rem; text-align: center;">Prototype Coming Soon</P>
   </div>
 </section>
 
@@ -326,5 +356,21 @@
   </div>
 </footer>
 
+<script>
+  
+const menuBtn = document.getElementById('sb-menu-btn');
+const sideBar = document.getElementById('sidebar');
+
+
+menuBtn.addEventListener("click", () => {
+  const isHidden = window.getComputedStyle(sideBar).display === "none";
+
+  if (isHidden) {
+    sideBar.style.display = "block";
+  } else {
+    sideBar.style.display = "none";
+  }
+});
+</script>
 </body>
 </html>

@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <title>Taskflow</title>
 </head>
 <body>
@@ -20,10 +23,35 @@
            <a href="index.html"><p>Shakayla C</p></a>
 
            <div class="nav-buttons">
-                <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
-                <a href="FrontendUIResume.html"><button id="cv_btn" class="cv-btn">CV</button></a>
+                <div class="dropdown">
+                    <button id="case_studies_btn" class="case-studies-btn">Case Studies</button>
+                    <div class="dropdown-content">
+                        <a href="rooted-portrait.html">Rooted Portrait</a>
+                        <a href="taskflow.html">Taskflow</a>
+                        <a href="forager-case-study.html">Forager's Log</a>
+                    </div>
+                </div>
+                <a href="Frontend_UI_Resume_2.html"><button id="cv_btn" class="cv-btn">CV</button></a>
                 <a href="mailto:shakayla220@yahoo.com"><button id="contact_btn" class="contact-btn-nav">Contact Me</button></a>
             </div>
+
+             <button class="sb_menu_btn" id="sb-menu-btn">
+                <img src="IMAGES/Menu.png" alt="">
+            </button>
+
+                <div id="sidebar" class="sidebar">
+                <ul>
+                    <li class="sb-case-studies"> Case Studies </li>
+                        <a href="rooted-portrait.html"><li class= "cs-links">Rooted Portrait</li></a>
+                        <a href="taskflow.html"><li class= "cs-links">Taskflow</li></a>
+                        <a href="forager-case-study.html"><li class= "cs-links">Forager's Log</li></a>
+                    </li>
+                    <a href="Frontend_UI_Resume_2.html"><li>CV</li></a>
+                    <a href="mailto:shakayla220@yahoo.com"><li>Contact Me</li></a>
+                </ul>
+            </div>
+
+
         </nav>
         
     </header>
@@ -43,10 +71,10 @@
                 <span>Taskflow is a streamlined project management application designed specifically for small businesses and freelancers who need <strong style="color: blueviolet;"><em>powerful</em></strong> organizational tools without enterprise-level complexity. The app balances <strong style="color: blueviolet;"><em>simplicity</em></strong> with <strong style="color: blueviolet;"><em>scalability</em></strong>, allowing teams to efficiently manage workloads from initial planning through completion.</span>
                 
                 <div class="project-info">
-                    <p><strong style="color: blueviolet;">ROLE</strong> - UI Designer (solo)</p>
-                    <p><strong style="color: blueviolet;">TIMEFRAME</strong> - 168 Hours</p>
-                    <P><strong style="color: blueviolet;">TOOLS</strong> - Figma Concepts  </P>
-                    <p><strong style="color: blueviolet;">TYPE</strong> - Concept Web App</p>
+                    <p style="font-size: 1.2rem;"><strong style="color: blueviolet;"><em>Role</em></strong> - UI Designer (solo)</p>
+                    <p style="font-size: 1.2rem;"><strong style="color: blueviolet;"><em>Timeframe</em></strong> - 168 Hours</p>
+                    <P style="font-size: 1.2rem;"><strong style="color: blueviolet;"><em>Tool</em></strong> - Figma Concepts  </P>
+                    <p style="font-size: 1.2rem;"><strong style="color: blueviolet;"><em>Type</em></strong> - Concept Web App</p>
                 </div>
 
 
@@ -74,10 +102,10 @@
 
                 <h2>Goals</h2>
                     <ul style="font-size: 1.3rem; line-height: 1.8; max-width: 1300px; margin: 0 auto; text-align: left; padding: 50px 0px 50px 0px">
-                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 90px; opacity: 20%;">1</strong> Reduce setup and navigation overhead compared to enterprise PM tools</li>
-                        <li><strong  style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 380px; opacity:20%;">2</strong> Consolidate redundant surfaces (like duplicate scheduling views) that add clicks without adding value</li>
-                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 695px; opacity: 20%; ">3</strong> a dedicated hub for cross-project work — messaging, files, project switching — instead of scattering it across separate pages</li>
-                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1145px; left: 975px; opacity: 20%;">4</strong>Keep the interface legible enough for a solo freelancer, while still functional for a growing team</li>
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 1890px; left: 20px; opacity: 20%;">1</strong> Reduce setup and navigation overhead compared to enterprise PM tools</li>
+                        <li><strong  style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 2092px; left: 20px; opacity:20%;">2</strong> Consolidate redundant surfaces (like duplicate scheduling views) that add clicks without adding value</li>
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 2305px; left: 20px; opacity: 20%; ">3</strong> a dedicated hub for cross-project work — messaging, files, project switching — instead of scattering it across separate pages</li>
+                        <li><strong style="color: blueviolet; position: absolute; font-size: 15rem; z-index: -1; top: 2550px; left: 20px; opacity: 20%;">4</strong>Keep the interface legible enough for a solo freelancer, while still functional for a growing team</li>
                     </ul>
 
         </section>
@@ -94,8 +122,16 @@
                             <div class="display-titles" id="hover-display" data-feature="messaging">Team Messaging</div>
                         </div>
 
-                    <h3 class="instructions" id="instructions"> Hover Over Key Features To Learn More</h3>
 
+                    <div class="content-display">
+                        <div class="feature-content active" id="feature-content">
+                            <img class="feature-image" id="feature-image" src="IMAGES/TF/Kanban.png">
+                            <p class="feature-description" id="feature-description">
+                                Visual task management system that displays project progress at a glance, from "to-do" through "completed," making it easy for individuals and small teams to track workflow
+                            </p>
+                        </div>
+                    </div>
+                                            <!--
                     <div class="content-display">
                         <div class="feature-content" id="kanban">
                         <img class="feature-image" src="IMAGES/TF/Kanban.png">
@@ -139,7 +175,7 @@
                             Communication system integrated across all projects, enabling seamless collaboration without leaving the platform
                         </p>
                         </div>
-
+                        -->
                     </div>
 
 
@@ -257,6 +293,10 @@
                             <a href="mailto:shakayla220@yahoo.com">
                             <button class="email-btn">Email</button>
                         </a>
+                        <a href="https://www.figma.com/design/PEYOOcJXarkM5siXZ3VkD1/Wireframes?node-id=0-1&t=IUZjOLM1MdrPvXdT-1">
+                            <button class="figma-btn">Figma Page</button>
+                        </a>
+
                     </div>
 
                     <div class="more-work">
@@ -271,7 +311,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Kayceedev. All rights reserved.</p>
+        <p>&copy; 2026 Shakayla Clark. All rights reserved.</p>
     </footer>
     <script src="./JS/taskflow.js"></script>
 </body>

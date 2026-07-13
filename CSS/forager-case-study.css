@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 :root {
     /*--green-color: #2a4034;*/
     --red-color: #8a1f24;
@@ -12,12 +16,12 @@
 }
 
 /* NAV */
+.sb_menu_btn, .sidebar {
+    display: none;
+}
 
-.ps-logo:hover {
-    color: var(--orange-color);
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
-    
+.sb-case-studies {
+    pointer-events: none;
 }
 
 .ps-nav {
@@ -26,21 +30,35 @@
     width: 100%;
     width: 100%;
     height: 10vh;
-    z-index: 999;
     background-color: #0000003a;
     font-family: var(--main-font);
 }
 
-.ps-nav > p {
+.ps-nav > a {
     font-size: 1.2rem;
     color: #fff;
     margin-right: 50%;
-    margin-left: 30px;
+    margin-left: 20px;
     font-family: var(--main-font);
+    text-decoration: none;
 }
 
 
-.case-studies-btn, .cv-btn, .contact-btn-nav {
+.ps-nav > a:hover {
+     color: var(--orange-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ps-nav-buttons {
+    display: flex;
+}
+
+.ps-nav-links {
+    display: flex;
+}
+
+ .cv-btn, .contact-btn-nav {
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -48,9 +66,9 @@
     transition: color 0.3s ease-in-out;
     text-align: end;
     margin-bottom: 4px;
+    margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 20px;
     font-family: var(--main-font);
 
 }
@@ -71,4 +89,139 @@
     color: var(--orange-color);
     transition: color 0.3s ease-in-out;
     cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropdown {
+  position: relative;
+}
+
+/* Style the dropdown button */
+.case-studies-btn {
+ border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    text-align: end;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: var(--main-font);
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .case-studies-btn {
+  background-color: #2c2c2c1c;
+  padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+@media (max-width: 600px) {
+
+.ps-nav-links {
+    display: none;
+}
+ 
+/* Sidebar */
+
+.sb_menu_btn, .sidebar {
+    display: block;
+}
+
+
+.sidebar li a:hover {
+    color: var(--orange-color);
+}
+
+.sidebar li:hover {
+     background-color: #3c3c3c41;
+}
+
+.nav-buttons {
+    display: none;
+}
+
+.sb_menu_btn > img {
+    width: 30px;
+}
+
+.sb_menu_btn {
+    width: 40px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sidebar {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 0px 0px 0px 5px;
+    width: 100%;
+    top: 50px;
+    z-index: 5;
+    
+}
+
+.sidebar > ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+
+a {
+    width: 100%;
+}
+
+
+li {
+    color: #313131;
+    padding: 10px;
+}
+
+ul {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+
+
+.cs-links {
+    margin-left: 20px;
+    font-weight: 500;
+}
 }
