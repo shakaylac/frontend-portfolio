@@ -965,7 +965,8 @@ nav > a {
 }
 
 .landing-pages > .landing-cards .landing-card > .text > h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    z-index: 2;
 }
 
 .landing-pages > .landing-cards > .landing-card > img {
@@ -973,11 +974,20 @@ nav > a {
     width: 300.22px;
     height: auto;
     left: 180px;
+    z-index: 0;
 }
 
 .green-block {
-    margin-left: -50px;
+    background-color: #24402A;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 120%;
+    height: 205%;
+    transform: rotate(-45deg);
+    z-index: 0;
 }
+
 
 .landing-pages > .landing-cards .landing-card > .text > p {
     font-size: 1.1rem;
@@ -985,9 +995,9 @@ nav > a {
 }
 
 .landing-pages > .landing-cards .landing-card > .text > .landing-button {
-    width: 150px;
+    width: 50%;
     padding: 10px 5px;
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 
