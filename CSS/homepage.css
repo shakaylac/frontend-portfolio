@@ -931,7 +931,6 @@ nav > a {
     flex-direction: column;
     place-items: center;
     margin-top: 130px;
-    margin-left: 40px;
 }
 
 .intro-section {
@@ -959,7 +958,7 @@ nav > a {
 /* Landing Cards */
 
 .landing-pages > .landing-cards > .landing-card {
-    width: 400px;
+    width: 100%;
 }
 
 .landing-pages > .landing-cards .landing-card > .text > h2 {
@@ -1040,7 +1039,7 @@ nav > a {
 }
 
 .cases > img {
-    height: 200px;
+    height: 100%;
 }
 
 .cases > p {
