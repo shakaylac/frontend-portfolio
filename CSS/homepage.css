@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.flex-or-grid-container > * {
+    min-width: 0;
+}
+
  :root {
     /*--green-color: #2a4034;*/
     --red-color: #8a1f24;
@@ -324,6 +328,12 @@ nav > a:hover {
 }
 
 /* Case Studies */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 a {
     text-decoration: none;
