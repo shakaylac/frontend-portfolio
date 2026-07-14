@@ -962,6 +962,9 @@ nav > a {
 
 
 /* Landing Cards */
+.landing-pages {
+    width: 100%;
+}
 
 .landing-pages > .landing-cards > .landing-card {
     width: 100%;
@@ -1005,6 +1008,7 @@ nav > a {
     width: 60%;
     padding: 10px 5px;
     margin-top: 5px;
+    font-size: 1.1rem;
 }
 
 
