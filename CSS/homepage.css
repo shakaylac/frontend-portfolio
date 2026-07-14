@@ -361,7 +361,7 @@ a {
 
 .cases {
     display: grid;
-    height: 200px;
+    height: auto; /* was 200px */
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: #fff;
