@@ -965,6 +965,7 @@ nav > a {
 
 .landing-pages > .landing-cards > .landing-card {
     width: 100%;
+    position: relative;
 }
 
 .landing-pages > .landing-cards .landing-card > .text > h2 {
@@ -976,7 +977,7 @@ nav > a {
     top: 50px;
     width: 300.22px;
     height: auto;
-    left: 180px;
+    left: 50%;
     z-index: 0;
 }
 
