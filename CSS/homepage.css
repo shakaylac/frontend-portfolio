@@ -1052,15 +1052,20 @@ nav > a {
 }
 
 .cases {
-    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    height: auto;
 }
 
 .cases > img {
     height: 100%;
 }
 
+
 .cases > p {
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-top: -20%;
     font-size: .9rem;
 }
 /*  Call to Action */
