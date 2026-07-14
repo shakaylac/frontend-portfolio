@@ -377,7 +377,7 @@ a {
 
 .cases > img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 5px 0 0 5px;
     object-fit: cover;
     overflow: hidden;
@@ -1037,6 +1037,10 @@ nav > a {
 
 .cases {
     height: 30vh;
+}
+
+.cases > img {
+    height: 200px;
 }
 
 .cases > p {
