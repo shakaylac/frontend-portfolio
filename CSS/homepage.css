@@ -984,7 +984,7 @@ nav > a {
 .green-block {
     background-color: #24402A;
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 25%;
     width: 120%;
     height: 205%;
@@ -996,6 +996,7 @@ nav > a {
 .landing-pages > .landing-cards .landing-card > .text > p {
     font-size: 1.1rem;
     margin-left: 5px;
+    text-align: left;
 }
 
 .landing-pages > .landing-cards .landing-card > .text > .landing-button {
