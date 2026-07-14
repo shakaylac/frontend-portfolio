@@ -977,7 +977,7 @@ nav > a {
     top: 50px;
     width: 300.22px;
     height: auto;
-    left: 50%;
+    left: 60%;
     z-index: 0;
 }
 
@@ -995,7 +995,7 @@ nav > a {
 
 .landing-pages > .landing-cards .landing-card > .text > p {
     font-size: 1.1rem;
-    margin-left: -25px;
+    margin-left: 5px;
 }
 
 .landing-pages > .landing-cards .landing-card > .text > .landing-button {
