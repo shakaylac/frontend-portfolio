@@ -1061,6 +1061,7 @@ nav > a {
 .case-studies-section {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .cases {
@@ -1079,6 +1080,7 @@ nav > a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 20px;
 }
 
 
