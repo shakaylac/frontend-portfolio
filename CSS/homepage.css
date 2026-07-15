@@ -966,7 +966,12 @@ nav > a {
     width: 100%;
 }
 
+.landing-pages > h1 {
+    width: 100%;
+}
+
 .landing-pages > .landing-cards > .landing-card {
+    display: flex;
     width: 100%;
     height: 25vh;
     position: relative;
