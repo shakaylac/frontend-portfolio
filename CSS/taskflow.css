@@ -1072,6 +1072,10 @@ ul {
     font-size: 1rem;
 }
 
+.feature-image {
+    height: auto;
+}
+
 .hover-sidebar {
     flex-direction: row;
     justify-content: center;
