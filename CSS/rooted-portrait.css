@@ -760,6 +760,7 @@ ul {
  /* LEARN MORE */
     .learn-more {
         width: 400px;
+        margin-top: 30px;
     }
 
     .learn-more > .contacts {
