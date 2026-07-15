@@ -1083,8 +1083,9 @@ nav > a {
 
 
 .cases > p {
-    margin: 10px;
+    margin-top: -80px;
     font-size: .9rem;
+
 }
 /*  Call to Action */
     
