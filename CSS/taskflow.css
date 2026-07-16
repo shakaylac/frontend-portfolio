@@ -974,7 +974,12 @@ ul {
     width: 100%;
 }
 
-/* GOALS */
+/* OVERVIEW */
+
+.overview {
+    width: 100%;
+    padding: 20px 50px;
+}
 
 .overview > ul {
     display: flex;
