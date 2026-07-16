@@ -1002,7 +1002,7 @@ ul {
     flex-direction: column;
 }
 
-.display > .titles {
+.display-titles {
     font-size: .9rem;
 }
 
