@@ -950,6 +950,7 @@ ul {
 
 .intro {
     height: 110vh;
+    width: 100%;
     padding: 20px 50px;
     margin: 0px;
 }
