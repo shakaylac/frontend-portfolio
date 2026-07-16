@@ -1095,5 +1095,18 @@ ul {
         margin-top: 30px;
     }
 
+    .learn-more h3 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .links a {
+        padding: 0px 10px;
+    }
+
 }
 
