@@ -969,7 +969,6 @@ ul {
 }
 
 .project-info {
-    display: flex;
     margin-left: 20px;
     font-size: .5rem;
     place-items: center;
