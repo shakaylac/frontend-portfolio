@@ -577,7 +577,7 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 699px) {
  
 /* Sidebar */
 
@@ -687,6 +687,7 @@ ul {
 
 .key-features {
     height: 250vh;
+    width: 100%;
 }
 
 .boxes-container h2 {
