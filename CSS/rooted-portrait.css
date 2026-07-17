@@ -763,8 +763,9 @@ ul {
 
  /* LEARN MORE */
     .learn-more {
-        width: 80%;
+        width: 100%;
         margin-top: 30px;
+        padding: 0px;
     }
 
     .learn-more > .contacts {
