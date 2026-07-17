@@ -249,10 +249,11 @@
   footer a.plain{font-size:0.85rem; color:var(--ink-soft); text-decoration:none;}
   footer .fine{font-size:0.76rem; color:var(--ink-soft); opacity:0.65;}
 
+  
   @media (max-width: 860px){
     .hero{grid-template-columns:1fr; padding-top:56px;}
     .hero h1{font-size:2.3rem;}
-    .hero p.lede{max-width:100%;}
+    .hero p.lede{max-width:85%;}
     .hero-visual{order:-1;}
     .spec-card{grid-template-columns:1fr; gap:26px;}
     .spec-card:nth-child(even) .spec-text{order:1;}
@@ -262,7 +263,7 @@
     .rating-inner{grid-template-columns:1fr;}
     .nav-links{gap:14px;}
     .nav-links a.plain{display:none;}
-  }
+  } 
 
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
@@ -293,7 +294,7 @@
 </nav>
 
 <section class="hero">
-  <div class="wrap" style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center; margin-left: 200px;">
+  <div class="wrap">
     <div>
       <span class="eyebrow">FIELD-TESTED PLANT ID</span>
       <h1>Know what<br><em>grows</em> around you.</h1>
