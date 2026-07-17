@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: #313131;
+    overflow-x: hidden;
 }
 
  :root {
