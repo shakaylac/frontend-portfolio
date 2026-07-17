@@ -688,6 +688,10 @@ ul {
     height: 250vh;
 }
 
+.boxes-container h2 {
+    text-align: center;
+}
+
 
 .boxes-container {
     display: flex;
