@@ -22,11 +22,7 @@
 
     }
     
-    .tag {
-        display: none;
-    }
-
-    .phone-frame {
+    .tag, .phone-frame {
         display: none;
     }
 
