@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #313131;
 }
+
 
  :root {
     --green-color: #2a4034;
@@ -124,6 +124,7 @@ nav > a:hover {
     text-align: end;
     margin-bottom: 4px;
     margin-top: 20px;
+    width: 200px;
     padding-left: 40px;
     padding-right: 40px;
     font-family: var(--main-font);
@@ -155,7 +156,8 @@ nav > a:hover {
 
 /* Style the dropdown button */
 .case-studies-btn {
- border: none;
+    border: none;
+    width: 200px;
     background-color: transparent;
     font-size: 1.2rem;
     color: #fff;
@@ -230,7 +232,7 @@ nav > a:hover {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    height: 80vh;
+    height: 100%;
     padding-top: 80px;
     background-color: #fff;
     box-shadow: var(--shadow);
@@ -308,15 +310,7 @@ span {
 }
 
 
-nav > a {
-    margin-right: 0px;
-    font-size: 1.2rem;
-    width: 200px;
-}
 
-.case-studies-btn {
-    width: 50px;
-}
 
 .cv-btn {
     width: 50px;
