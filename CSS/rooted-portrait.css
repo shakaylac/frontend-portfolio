@@ -675,6 +675,26 @@ ul {
     margin-bottom: 50px;
 }
 
+.overview-container-1,
+.overview-container-2 {
+    position: static;      /* was absolute — this is the main fix */
+    width: 100%;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    align-self: auto;
+    border-radius: 10px;
+}
+
+.overview-container-2 .text {
+    text-align: left;      /* was "end" — fine on desktop, awkward stacked on mobile */
+}
+
+.overview-container-2 > h2 {
+    margin-right: 0;       /* was -100px, meant to counter the old right:100px offset */
+}
+
 /* GOALS */
  .goals > ul {
     display: flex;
@@ -698,14 +718,23 @@ ul {
     display: flex;
     flex-direction: column;
     place-items: center;
+    width: 100%;
+    justify-content: center;
+
+    position: static;      /* was absolute — same fix as above */
+    left: auto;
+    top: auto;
 }
 
 .boxes-container > h2 {
     display: block;
+    text-align: center;
 }
 
 .boxes {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
+    margin-left: 20%;
 }
 
 .shadow {
@@ -716,6 +745,7 @@ ul {
     margin-top: -60px;
     width: 100%;
     text-align: center;
+    margin-left: -15%;
 }
 
 
