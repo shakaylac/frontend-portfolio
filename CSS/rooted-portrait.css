@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #313131;
 }
 
 html, body {
     overflow-x: hidden;
+    color: #313131;
 }
 
  :root {
@@ -495,6 +495,7 @@ nav > a:hover {
     padding: 10px;
     border-radius: 10px;
     border: none;
+    color: #fff;
     transition: transform 0.3s ease;
     background-color: #8a1f24;
 }
