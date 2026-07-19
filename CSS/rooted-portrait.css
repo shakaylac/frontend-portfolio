@@ -4,6 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
     color: #313131;
+}
+
+html, body {
     overflow-x: hidden;
 }
 
