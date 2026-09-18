@@ -1392,6 +1392,10 @@ nav > a:hover {
     margin-right: 50%;
     }
 
+    .intro-section {
+        width: 100%;
+    }
+
 
     .intro-text {
         margin: 0;
