@@ -1125,7 +1125,7 @@ nav > a {
 
 }
 
-@media (min-width: 700px) {
+@media (max-width: 1199px) {
 
 /* homepage.css | file:///c%3A/Users/KayCN/coding-projects/frontend-profile/frontend-portfolio/CSS/homepage.css */
 /* HEADER */
