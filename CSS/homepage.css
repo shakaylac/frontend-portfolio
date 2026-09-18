@@ -1256,6 +1256,10 @@ nav > a:hover {
     padding-right: 40px;
 }
 
+.intro-section {
+    width: 100%;
+}
+
 /* Landing Pages */
 
 .landing-pages {
