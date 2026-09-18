@@ -1384,8 +1384,8 @@ nav > a:hover {
 @media (min-width: 1200px) {
 
     .intro-section {
+        background-size: 1440px 841px;
         width: 100%;
-        
     }
     
     #sidebar, .sb_menu_btn {
